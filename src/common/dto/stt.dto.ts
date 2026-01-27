@@ -1,6 +1,6 @@
-import { IsNotEmpty } from "class-validator";
+import { IsNotEmpty } from 'class-validator';
 
 export class STTDto {
-    @IsNotEmpty()
-    audio: string;
+  @IsNotEmpty()
+  audio: string;
 }

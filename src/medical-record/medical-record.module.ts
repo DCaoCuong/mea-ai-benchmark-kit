@@ -4,9 +4,9 @@ import { MedicalRecordService } from './medical-record.service';
 import { DatabaseModule } from '../database/database.module';
 
 @Module({
-    imports: [DatabaseModule],
-    controllers: [MedicalRecordController],
-    providers: [MedicalRecordService],
-    exports: [MedicalRecordService],
+  imports: [DatabaseModule],
+  controllers: [MedicalRecordController],
+  providers: [MedicalRecordService],
+  exports: [MedicalRecordService],
 })
-export class MedicalRecordModule { }
+export class MedicalRecordModule {}

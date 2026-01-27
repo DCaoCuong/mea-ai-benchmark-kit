@@ -6,9 +6,9 @@ import { DatabaseModule } from '../database/database.module';
 import { RagModule } from '../rag/rag.module';
 
 @Module({
-    imports: [DatabaseModule, RagModule],
-    controllers: [ComparisonController],
-    providers: [ComparisonService, ComparisonAgentService],
-    exports: [ComparisonService],
+  imports: [DatabaseModule, RagModule],
+  controllers: [ComparisonController],
+  providers: [ComparisonService, ComparisonAgentService],
+  exports: [ComparisonService],
 })
-export class ComparisonModule { }
+export class ComparisonModule {}

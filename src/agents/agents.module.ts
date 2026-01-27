@@ -4,8 +4,8 @@ import { MedicalAgentGraphService } from './graph/medical-agent-graph.service';
 import { RagModule } from '../rag/rag.module';
 
 @Module({
-    imports: [RagModule],
-    providers: [AgentNodesService, MedicalAgentGraphService],
-    exports: [MedicalAgentGraphService],
+  imports: [RagModule],
+  providers: [AgentNodesService, MedicalAgentGraphService],
+  exports: [MedicalAgentGraphService],
 })
-export class AgentsModule { }
+export class AgentsModule {}

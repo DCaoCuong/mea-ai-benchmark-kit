@@ -2,17 +2,21 @@ import { Injectable } from '@nestjs/common';
 import { AgentState } from '../graph/agent.state';
 import { VectorStoreService } from '../../rag/vectorstore.service';
 import { Document } from '@langchain/core/documents';
-import { getGroqClient, GROQ_MODEL_STANDARD, GROQ_MODEL_EXPERT } from '../models/groq.models';
+import {
+  getGroqClient,
+  GROQ_MODEL_STANDARD,
+  GROQ_MODEL_EXPERT,
+} from '../models/groq.models';
 
 @Injectable()
 export class AgentNodesService {
-    constructor(private readonly vectorStoreService: VectorStoreService) { }
+  constructor(private readonly vectorStoreService: VectorStoreService) {}
 
-    // --- 1. SCRIBE AGENT ---
-    async scribeNode(state: AgentState): Promise<Partial<AgentState>> {
-        console.log('Scribe Agent working (Groq GPT-OSS-120B)...');
+  // --- 1. SCRIBE AGENT ---
+  async scribeNode(state: AgentState): Promise<Partial<AgentState>> {
+    console.log('Scribe Agent working (Groq GPT-OSS-120B)...');
 
-        const prompt = `Bạn là thư ký y khoa chuyên nghiệp.
+    const prompt = `Bạn là thư ký y khoa chuyên nghiệp.
 Nhiệm vụ: Chuyển transcript hội thoại thành bệnh án chuẩn SOAP tiếng Việt.
 
 Transcript:
@@ -27,37 +31,35 @@ Yêu cầu output JSON format:
 }
 Chỉ trả về JSON hợp lệ, không có text khác.`;
 
-        try {
-            const groq = getGroqClient();
-            const completion = await groq.chat.completions.create({
-                messages: [{ role: 'user', content: prompt }],
-                model: GROQ_MODEL_STANDARD,
-                temperature: 0.1,
-                response_format: { type: 'json_object' },
-            });
+    try {
+      const groq = getGroqClient();
+      const completion = await groq.chat.completions.create({
+        messages: [{ role: 'user', content: prompt }],
+        model: GROQ_MODEL_STANDARD,
+        temperature: 0.1,
+        response_format: { type: 'json_object' },
+      });
 
-            const soap = JSON.parse(
-                completion.choices[0]?.message?.content || '{}',
-            );
-            return { soap };
-        } catch (e) {
-            console.error('Scribe Agent Error:', e);
-            return {
-                soap: {
-                    subjective: '',
-                    objective: '',
-                    assessment: '',
-                    plan: 'Error generating SOAP note',
-                },
-            };
-        }
+      const soap = JSON.parse(completion.choices[0]?.message?.content || '{}');
+      return { soap };
+    } catch (e) {
+      console.error('Scribe Agent Error:', e);
+      return {
+        soap: {
+          subjective: '',
+          objective: '',
+          assessment: '',
+          plan: 'Error generating SOAP note',
+        },
+      };
     }
+  }
 
-    // --- 2. ICD-10 AGENT ---
-    async icdNode(state: AgentState): Promise<Partial<AgentState>> {
-        console.log('ICD-10 Agent working (Groq GPT-OSS-120B)...');
+  // --- 2. ICD-10 AGENT ---
+  async icdNode(state: AgentState): Promise<Partial<AgentState>> {
+    console.log('ICD-10 Agent working (Groq GPT-OSS-120B)...');
 
-        const prompt = `Bạn là chuyên gia về mã hóa bệnh lý ICD-10.
+    const prompt = `Bạn là chuyên gia về mã hóa bệnh lý ICD-10.
 Chẩn đoán: "${state.soap.assessment}"
 Triệu chứng: "${state.soap.subjective}"
 
@@ -68,50 +70,50 @@ Ví dụ:
     "codes": ["K29.7 - Viêm dạ dày", "R10.1 - Đau vùng thượng vị"]
 }`;
 
-        try {
-            const groq = getGroqClient();
-            const completion = await groq.chat.completions.create({
-                messages: [{ role: 'user', content: prompt }],
-                model: GROQ_MODEL_STANDARD,
-                temperature: 0.1,
-                response_format: { type: 'json_object' },
-            });
+    try {
+      const groq = getGroqClient();
+      const completion = await groq.chat.completions.create({
+        messages: [{ role: 'user', content: prompt }],
+        model: GROQ_MODEL_STANDARD,
+        temperature: 0.1,
+        response_format: { type: 'json_object' },
+      });
 
-            const content = completion.choices[0]?.message?.content || '{}';
-            console.log(' ICD-10 Raw Output:', content);
+      const content = completion.choices[0]?.message?.content || '{}';
+      console.log(' ICD-10 Raw Output:', content);
 
-            const parsed = JSON.parse(content);
-            // Normalize output
-            const codes = Array.isArray(parsed)
-                ? parsed
-                : parsed.codes || parsed.icd_codes || [];
-            const finalCodes = Array.isArray(codes)
-                ? codes.map((c) => String(c))
-                : [];
+      const parsed = JSON.parse(content);
+      // Normalize output
+      const codes = Array.isArray(parsed)
+        ? parsed
+        : parsed.codes || parsed.icd_codes || [];
+      const finalCodes = Array.isArray(codes)
+        ? codes.map((c) => String(c))
+        : [];
 
-            return { icdCodes: finalCodes };
-        } catch (e) {
-            console.error('ICD-10 Agent Error:', e);
-            return { icdCodes: ['Error retrieving ICD codes'] };
-        }
+      return { icdCodes: finalCodes };
+    } catch (e) {
+      console.error('ICD-10 Agent Error:', e);
+      return { icdCodes: ['Error retrieving ICD codes'] };
     }
+  }
 
-    // --- 3. MEDICAL EXPERT AGENT (RAG) ---
-    async expertNode(state: AgentState): Promise<Partial<AgentState>> {
-        console.log('🧑‍⚕️ Medical Expert Agent working (Groq GPT-OSS-20B)...');
+  // --- 3. MEDICAL EXPERT AGENT (RAG) ---
+  async expertNode(state: AgentState): Promise<Partial<AgentState>> {
+    console.log('🧑‍⚕️ Medical Expert Agent working (Groq GPT-OSS-20B)...');
 
-        try {
-            // 1. Retrieve relevant docs based on Subjective
-            const retriever = this.vectorStoreService.getRetriever();
-            const docs = await retriever.invoke(state.soap.subjective);
+    try {
+      // 1. Retrieve relevant docs based on Subjective
+      const retriever = this.vectorStoreService.getRetriever();
+      const docs = await retriever.invoke(state.soap.subjective);
 
-            const context = docs.map((d: Document) => d.pageContent).join('\n---\n');
-            const references = docs.map((d: Document) =>
-                (d.metadata.source || 'Unknown Source').replace('.md', ''),
-            );
+      const context = docs.map((d: Document) => d.pageContent).join('\n---\n');
+      const references = docs.map((d: Document) =>
+        (d.metadata.source || 'Unknown Source').replace('.md', ''),
+      );
 
-            // 2. Ask LLM with Context
-            const prompt = `Bạn là chuyên gia y tế cố vấn. TẤT CẢ PHẢN HỒI PHẢI BẰNG TIẾNG VIỆT.
+      // 2. Ask LLM with Context
+      const prompt = `Bạn là chuyên gia y tế cố vấn. TẤT CẢ PHẢN HỒI PHẢI BẰNG TIẾNG VIỆT.
 Dựa vào Y VĂN ĐƯỢC CUNG CẤP dưới đây, hãy đưa ra nhận xét và gợi ý điều trị.
 
 Y VĂN (Context):
@@ -135,23 +137,23 @@ LƯU Ý QUAN TRỌNG:
 - KHÔNG dùng tiếng Anh. 
 - Tất cả tiêu đề, nội dung phải hoàn toàn bằng TIẾNG VIỆT.`;
 
-            const groq = getGroqClient();
-            const completion = await groq.chat.completions.create({
-                messages: [{ role: 'user', content: prompt }],
-                model: GROQ_MODEL_EXPERT,
-                temperature: 0.2,
-            });
+      const groq = getGroqClient();
+      const completion = await groq.chat.completions.create({
+        messages: [{ role: 'user', content: prompt }],
+        model: GROQ_MODEL_EXPERT,
+        temperature: 0.2,
+      });
 
-            return {
-                medicalAdvice: completion.choices[0]?.message?.content || '',
-                references,
-            };
-        } catch (e) {
-            console.error('Medical Expert Agent Error:', e);
-            return {
-                medicalAdvice: 'Error generating medical advice',
-                references: [],
-            };
-        }
+      return {
+        medicalAdvice: completion.choices[0]?.message?.content || '',
+        references,
+      };
+    } catch (e) {
+      console.error('Medical Expert Agent Error:', e);
+      return {
+        medicalAdvice: 'Error generating medical advice',
+        references: [],
+      };
     }
+  }
 }

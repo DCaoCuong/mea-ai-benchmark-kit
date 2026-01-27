@@ -5,8 +5,8 @@ import { DatabaseModule } from '../database/database.module';
 import { PatientModule } from '../patient/patient.module';
 
 @Module({
-    imports: [DatabaseModule, PatientModule],
-    controllers: [AdminController],
-    providers: [AdminService],
+  imports: [DatabaseModule, PatientModule],
+  controllers: [AdminController],
+  providers: [AdminService],
 })
-export class AdminModule { }
+export class AdminModule {}

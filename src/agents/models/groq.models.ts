@@ -11,21 +11,20 @@ let groqInstance: Groq | null = null;
  * @returns Groq client instance
  */
 export function getGroqClient(): Groq {
-    if (!groqInstance) {
-        const apiKey = process.env.GROQ_API_KEY;
+  if (!groqInstance) {
+    const apiKey = process.env.GROQ_API_KEY;
 
-        if (!apiKey) {
-            throw new Error(
-                'GROQ_API_KEY is not set. Please add it to your .env file'
-            );
-        }
-
-        groqInstance = new Groq({ apiKey });
+    if (!apiKey) {
+      throw new Error(
+        'GROQ_API_KEY is not set. Please add it to your .env file',
+      );
     }
 
-    return groqInstance;
+    groqInstance = new Groq({ apiKey });
+  }
+
+  return groqInstance;
 }
 
 export const GROQ_MODEL_STANDARD = 'openai/gpt-oss-120b';
 export const GROQ_MODEL_EXPERT = 'openai/gpt-oss-20b';
-

@@ -16,15 +16,19 @@ async function bootstrap() {
     allowedHeaders: ['Content-Type', 'Authorization'],
   });
 
-  app.useGlobalPipes(new ValidationPipe({
-    whitelist: true,
-    forbidNonWhitelisted: true,
-    transform: true,
-  }));
+  app.useGlobalPipes(
+    new ValidationPipe({
+      whitelist: true,
+      forbidNonWhitelisted: true,
+      transform: true,
+    }),
+  );
 
   const port = process.env.PORT || 4000;
 
   await app.listen(port);
-  console.log(`🚀 NestJS Backend is running on: http://localhost:${await app.getUrl()}`);
+  console.log(
+    `🚀 NestJS Backend is running on: http://localhost:${await app.getUrl()}`,
+  );
 }
 bootstrap();

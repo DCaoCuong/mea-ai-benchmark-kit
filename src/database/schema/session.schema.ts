@@ -1,4 +1,12 @@
-import { pgTable, uuid, varchar, text, integer, timestamp, jsonb } from 'drizzle-orm/pg-core';
+import {
+  pgTable,
+  uuid,
+  varchar,
+  text,
+  integer,
+  timestamp,
+  jsonb,
+} from 'drizzle-orm/pg-core';
 import { bookings } from './booking.schema';
 
 /**
@@ -6,30 +14,30 @@ import { bookings } from './booking.schema';
  * Tracks patient visits and links to bookings from Booking Clinic system
  */
 export const examinationSessions = pgTable('examination_sessions', {
-    // Primary Key
-    id: uuid('id').primaryKey().defaultRandom(),
+  // Primary Key
+  id: uuid('id').primaryKey().defaultRandom(),
 
-    // Booking Link (Primary way to link to patient from Booking Clinic)
-    bookingId: uuid('booking_id').references(() => bookings.id, {
-        onDelete: 'cascade',
-    }),
+  // Booking Link (Primary way to link to patient from Booking Clinic)
+  bookingId: uuid('booking_id').references(() => bookings.id, {
+    onDelete: 'cascade',
+  }),
 
-    // Patient Link (Legacy - kept for backwards compatibility, now nullable)
-    patientId: uuid('patient_id'),
+  // Patient Link (Legacy - kept for backwards compatibility, now nullable)
+  patientId: uuid('patient_id'),
 
-    // Visit Information
-    visitNumber: integer('visit_number').notNull(), // Lần khám thứ mấy (1, 2, 3...)
-    chiefComplaint: text('chief_complaint'), // Lý do khám lần này
+  // Visit Information
+  visitNumber: integer('visit_number').notNull(), // Lần khám thứ mấy (1, 2, 3...)
+  chiefComplaint: text('chief_complaint'), // Lý do khám lần này
 
-    // HIS System Integration
-    visitId: varchar('visit_id', { length: 100 }), // ID from external HIS System (optional)
+  // HIS System Integration
+  visitId: varchar('visit_id', { length: 100 }), // ID from external HIS System (optional)
 
-    // Session Status
-    status: varchar('status', { length: 50 }).notNull().default('active'),
+  // Session Status
+  status: varchar('status', { length: 50 }).notNull().default('active'),
 
-    // Timestamps
-    createdAt: timestamp('created_at').defaultNow().notNull(),
-    updatedAt: timestamp('updated_at').defaultNow().notNull(),
+  // Timestamps
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
 });
 
 /**
@@ -37,33 +45,33 @@ export const examinationSessions = pgTable('examination_sessions', {
  * Stores SOAP notes and ICD codes for each examination
  */
 export const medicalRecords = pgTable('medical_records', {
-    // Primary Key
-    id: uuid('id').primaryKey().defaultRandom(),
+  // Primary Key
+  id: uuid('id').primaryKey().defaultRandom(),
 
-    // Foreign Key
-    sessionId: uuid('session_id')
-        .references(() => examinationSessions.id, { onDelete: 'cascade' })
-        .notNull(),
+  // Foreign Key
+  sessionId: uuid('session_id')
+    .references(() => examinationSessions.id, { onDelete: 'cascade' })
+    .notNull(),
 
-    // SOAP Note Components
-    subjective: text('subjective'), // Triệu chứng, lời kể bệnh nhân
-    objective: text('objective'), // Sinh hiệu, khám lâm sàng
-    assessment: text('assessment'), // Chẩn đoán
-    plan: text('plan'), // Kế hoạch điều trị
+  // SOAP Note Components
+  subjective: text('subjective'), // Triệu chứng, lời kể bệnh nhân
+  objective: text('objective'), // Sinh hiệu, khám lâm sàng
+  assessment: text('assessment'), // Chẩn đoán
+  plan: text('plan'), // Kế hoạch điều trị
 
-    // ICD-10 Codes
-    icdCodes: jsonb('icd_codes'), // Array of ICD codes: ["K29.7", "I10"]
+  // ICD-10 Codes
+  icdCodes: jsonb('icd_codes'), // Array of ICD codes: ["K29.7", "I10"]
 
-    // Additional fields from Booking (may overlap with SOAP)
-    diagnosis: text('diagnosis'), // May overlap with assessment
-    prescription: text('prescription'), // May overlap with plan
+  // Additional fields from Booking (may overlap with SOAP)
+  diagnosis: text('diagnosis'), // May overlap with assessment
+  prescription: text('prescription'), // May overlap with plan
 
-    // Record Status
-    status: varchar('status', { length: 50 }).notNull().default('draft'),
+  // Record Status
+  status: varchar('status', { length: 50 }).notNull().default('draft'),
 
-    // Timestamps
-    createdAt: timestamp('created_at').defaultNow().notNull(),
-    updatedAt: timestamp('updated_at').defaultNow().notNull(),
+  // Timestamps
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
 });
 
 // Type exports

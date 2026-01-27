@@ -1,16 +1,16 @@
 export interface SoapNote {
-    subjective: string;
-    objective: string;
-    assessment: string;
-    plan: string;
+  subjective: string;
+  objective: string;
+  assessment: string;
+  plan: string;
 }
 
 export interface AgentState {
-    transcript: string;
+  transcript: string;
 
-    soap: SoapNote;
+  soap: SoapNote;
 
-    icdCodes: string[];
-    medicalAdvice: string;
-    references: string[];
+  icdCodes: string[];
+  medicalAdvice: string;
+  references: string[];
 }

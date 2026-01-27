@@ -4,9 +4,9 @@ import { SttService } from './stt.service';
 import { AgentsModule } from '../agents/agents.module';
 
 @Module({
-    imports: [AgentsModule],
-    controllers: [SttController],
-    providers: [SttService],
-    exports: [SttService],
+  imports: [AgentsModule],
+  controllers: [SttController],
+  providers: [SttService],
+  exports: [SttService],
 })
-export class SttModule { }
+export class SttModule {}
