@@ -2,6 +2,7 @@ import {
   Controller,
   Post,
   Get,
+  Delete,
   Body,
   Param,
   HttpException,
@@ -12,7 +13,7 @@ import type { CreateSessionDto } from './dto/session.dto';
 
 @Controller('session')
 export class SessionController {
-  constructor(private readonly sessionService: SessionService) {}
+  constructor(private readonly sessionService: SessionService) { }
 
   /**
    * POST /session/create
@@ -152,6 +153,59 @@ export class SessionController {
           success: false,
           error: 'Internal server error',
           message: 'Không thể lấy thông tin phiên khám',
+          details: error instanceof Error ? error.message : 'Unknown error',
+        },
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
+    }
+  }
+
+  /**
+   * DELETE /session/:sessionId
+   * Delete session and associated medical records
+   */
+  @Delete(':sessionId')
+  async deleteSession(@Param('sessionId') sessionId: string) {
+    try {
+      if (!sessionId) {
+        throw new HttpException(
+          {
+            success: false,
+            error: 'Session ID is required',
+          },
+          HttpStatus.BAD_REQUEST,
+        );
+      }
+
+      const deleted = await this.sessionService.deleteSession(sessionId);
+
+      if (!deleted) {
+        throw new HttpException(
+          {
+            success: false,
+            error: 'Session not found',
+            message: 'Phiên khám không tồn tại',
+          },
+          HttpStatus.NOT_FOUND,
+        );
+      }
+
+      return {
+        success: true,
+        message: 'Xóa phiên khám thành công',
+      };
+    } catch (error) {
+      console.error('❌ Error deleting session:', error);
+
+      if (error instanceof HttpException) {
+        throw error;
+      }
+
+      throw new HttpException(
+        {
+          success: false,
+          error: 'Internal server error',
+          message: 'Không thể xóa phiên khám',
           details: error instanceof Error ? error.message : 'Unknown error',
         },
         HttpStatus.INTERNAL_SERVER_ERROR,
