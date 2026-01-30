@@ -9,7 +9,7 @@ import { bookings } from '../database/schema/booking.schema';
 
 @Injectable()
 export class SessionService {
-  constructor(private readonly databaseService: DatabaseService) {}
+  constructor(private readonly databaseService: DatabaseService) { }
 
   /**
    * Create session from booking (Primary method)
@@ -107,5 +107,30 @@ export class SessionService {
       .limit(1);
 
     return results[0] || null;
+  }
+
+  /**
+   * Delete session by ID (with cascade delete of medical records)
+   */
+  async deleteSession(sessionId: string): Promise<boolean> {
+    const db = this.databaseService.getDatabase();
+
+    // First, check if session exists
+    const session = await this.getSessionById(sessionId);
+    if (!session) {
+      return false;
+    }
+
+    // Delete associated medical records first 
+    await db
+      .delete(medicalRecords)
+      .where(eq(medicalRecords.sessionId, sessionId));
+
+    // Delete the session
+    await db
+      .delete(examinationSessions)
+      .where(eq(examinationSessions.id, sessionId));
+
+    return true;
   }
 }
