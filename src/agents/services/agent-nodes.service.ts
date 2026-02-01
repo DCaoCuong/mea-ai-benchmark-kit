@@ -3,18 +3,18 @@ import { AgentState } from '../graph/agent.state';
 import { VectorStoreService } from '../../rag/vectorstore.service';
 import { Document } from '@langchain/core/documents';
 import {
-  getGroqClient,
-  GROQ_MODEL_STANDARD,
-  GROQ_MODEL_EXPERT,
-} from '../models/groq.models';
+  ollamaChat,
+  OLLAMA_MODEL_STANDARD,
+  OLLAMA_MODEL_EXPERT,
+} from '../models/ollama.models';
 
 @Injectable()
 export class AgentNodesService {
-  constructor(private readonly vectorStoreService: VectorStoreService) {}
+  constructor(private readonly vectorStoreService: VectorStoreService) { }
 
   // --- 1. SCRIBE AGENT ---
   async scribeNode(state: AgentState): Promise<Partial<AgentState>> {
-    console.log('Scribe Agent working (Groq GPT-OSS-120B)...');
+    console.log(`📝 Scribe Agent working (Ollama ${OLLAMA_MODEL_STANDARD})...`);
 
     const prompt = `Bạn là thư ký y khoa chuyên nghiệp.
 Nhiệm vụ: Chuyển transcript hội thoại thành bệnh án chuẩn SOAP tiếng Việt.
@@ -32,10 +32,9 @@ Yêu cầu output JSON format:
 Chỉ trả về JSON hợp lệ, không có text khác.`;
 
     try {
-      const groq = getGroqClient();
-      const completion = await groq.chat.completions.create({
+      const completion = await ollamaChat({
         messages: [{ role: 'user', content: prompt }],
-        model: GROQ_MODEL_STANDARD,
+        model: OLLAMA_MODEL_STANDARD,
         temperature: 0.1,
         response_format: { type: 'json_object' },
       });
@@ -57,7 +56,7 @@ Chỉ trả về JSON hợp lệ, không có text khác.`;
 
   // --- 2. ICD-10 AGENT ---
   async icdNode(state: AgentState): Promise<Partial<AgentState>> {
-    console.log('ICD-10 Agent working (Groq GPT-OSS-120B)...');
+    console.log(`🏥 ICD-10 Agent working (Ollama ${OLLAMA_MODEL_STANDARD})...`);
 
     const prompt = `Bạn là chuyên gia về mã hóa bệnh lý ICD-10.
 Chẩn đoán: "${state.soap.assessment}"
@@ -71,10 +70,9 @@ Ví dụ:
 }`;
 
     try {
-      const groq = getGroqClient();
-      const completion = await groq.chat.completions.create({
+      const completion = await ollamaChat({
         messages: [{ role: 'user', content: prompt }],
-        model: GROQ_MODEL_STANDARD,
+        model: OLLAMA_MODEL_STANDARD,
         temperature: 0.1,
         response_format: { type: 'json_object' },
       });
@@ -100,7 +98,7 @@ Ví dụ:
 
   // --- 3. MEDICAL EXPERT AGENT (RAG) ---
   async expertNode(state: AgentState): Promise<Partial<AgentState>> {
-    console.log('🧑‍⚕️ Medical Expert Agent working (Groq GPT-OSS-20B)...');
+    console.log(`🧑‍⚕️ Medical Expert Agent working (Ollama ${OLLAMA_MODEL_EXPERT})...`);
 
     try {
       // 1. Retrieve relevant docs based on Subjective
@@ -137,10 +135,9 @@ LƯU Ý QUAN TRỌNG:
 - KHÔNG dùng tiếng Anh. 
 - Tất cả tiêu đề, nội dung phải hoàn toàn bằng TIẾNG VIỆT.`;
 
-      const groq = getGroqClient();
-      const completion = await groq.chat.completions.create({
+      const completion = await ollamaChat({
         messages: [{ role: 'user', content: prompt }],
-        model: GROQ_MODEL_EXPERT,
+        model: OLLAMA_MODEL_EXPERT,
         temperature: 0.2,
       });
 

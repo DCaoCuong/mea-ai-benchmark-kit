@@ -1,14 +1,15 @@
 import { Injectable } from '@nestjs/common';
 import {
-  getGroqClient,
-  GROQ_MODEL_STANDARD,
-} from '../agents/models/groq.models';
+  ollamaChat,
+  OLLAMA_MODEL_STANDARD,
+} from '../agents/models/ollama.models';
 import { TranscriptSegment, ProcessedSegment } from './dto/stt-response.dto';
 
 @Injectable()
 export class SttService {
   /**
    * Call Groq Whisper API to transcribe audio to text
+   * TODO: Will be replaced with Whisper.cpp in Component 2
    */
   async transcribeWithGroq(
     audioBlob: Buffer,
@@ -75,7 +76,7 @@ export class SttService {
   }
 
   /**
-   * Use LLM to analyze content and detect speaker roles
+   * Use Ollama LLM to analyze content and detect speaker roles
    * Based on conversation context to determine who is Doctor vs Patient
    */
   async detectSpeakerRoleByContent(
@@ -108,13 +109,12 @@ Trả về CHÍNH XÁC định dạng JSON array sau, KHÔNG có text khác:
 [{"index": 0, "role": "Bác sĩ"}, {"index": 1, "role": "Bệnh nhân"}, ...]`;
 
     try {
-      console.log('🔍 Analyzing speaker roles with Groq...');
+      console.log(`🔍 Analyzing speaker roles with Ollama (${OLLAMA_MODEL_STANDARD})...`);
 
-      // Groq API call (lazy-initialized)
-      const groq = getGroqClient();
-      const completion = await groq.chat.completions.create({
+      // Ollama API call
+      const completion = await ollamaChat({
         messages: [{ role: 'user', content: prompt }],
-        model: GROQ_MODEL_STANDARD,
+        model: OLLAMA_MODEL_STANDARD,
         temperature: 0.1,
       });
 
@@ -152,16 +152,15 @@ Trả về CHÍNH XÁC định dạng JSON array sau, KHÔNG có text khác:
   }
 
   /**
-   * Use Groq (OpenAI GPT-OSS-120B) to fix medical terminology errors quickly
+   * Use Ollama LLM to fix medical terminology errors quickly
    * ONLY fixes typos, does NOT add new content
    */
   async fixMedicalText(text: string): Promise<string> {
     if (!text || text.trim().length === 0) return text;
 
     try {
-      // Groq API call with OpenAI model (lazy-initialized)
-      const groq = getGroqClient();
-      const completion = await groq.chat.completions.create({
+      // Ollama API call
+      const completion = await ollamaChat({
         messages: [
           {
             role: 'system',
@@ -182,12 +181,12 @@ QUY TẮC BẮT BUỘC:
           },
           { role: 'user', content: text },
         ],
-        model: GROQ_MODEL_STANDARD,
+        model: OLLAMA_MODEL_STANDARD,
         temperature: 0.05,
       });
 
-      // Add artificial delay to respect rate limits if calling in loop
-      await new Promise((resolve) => setTimeout(resolve, 200));
+      // Small delay to avoid overwhelming local Ollama
+      await new Promise((resolve) => setTimeout(resolve, 100));
 
       return completion.choices[0]?.message?.content || text;
     } catch (error) {
@@ -210,6 +209,7 @@ QUY TẮC BẮT BUỘC:
       console.log(`🎤 Received audio: ${audioBuffer.length} bytes`);
 
       // Step 1: Whisper STT - Convert audio to text
+      // TODO: Will be replaced with Whisper.cpp in Component 2
       console.log('🔊 Running Whisper STT...');
       const transcription = await this.transcribeWithGroq(audioBuffer);
       console.log(
