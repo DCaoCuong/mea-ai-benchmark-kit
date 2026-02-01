@@ -24,10 +24,10 @@ export class SttService {
     formData.append('response_format', 'verbose_json');
 
     const response = await fetch(
-      'https://api.groq.com/openai/v1/audio/transcriptions',
+      `${process.env.WHISPER_BASE_URL}/inference`,
       {
         method: 'POST',
-        headers: { Authorization: `Bearer ${process.env.GROQ_API_KEY}` },
+        headers: { Authorization: `Bearer ${process.env.WHISPER_API_KEY}` },
         body: formData,
       },
     );
