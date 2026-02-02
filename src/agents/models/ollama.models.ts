@@ -6,10 +6,14 @@
 // Environment configuration
 export const OLLAMA_BASE_URL =
     process.env.OLLAMA_BASE_URL || 'http://localhost:11434';
+export const OLLAMA_MODEL_LIGHT =
+    process.env.OLLAMA_MODEL_LIGHT || 'gemma2:2b';
 export const OLLAMA_MODEL_STANDARD =
-    process.env.OLLAMA_MODEL_STANDARD || 'qwen3:4b';
+    process.env.OLLAMA_MODEL_STANDARD || 'phi3:3.8b';
 export const OLLAMA_MODEL_EXPERT =
     process.env.OLLAMA_MODEL_EXPERT || 'llama3.2';
+export const OLLAMA_EMBEDDING_MODEL =
+    process.env.OLLAMA_EMBEDDING_MODEL || 'nomic-embed-text-v2-moe';
 
 // Types for Ollama API (OpenAI-compatible)
 interface OllamaChatMessage {
@@ -83,6 +87,7 @@ export async function ollamaChat(options: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(requestBody),
+        signal: AbortSignal.timeout(60000), // 60 second timeout
     });
 
     if (!response.ok) {
