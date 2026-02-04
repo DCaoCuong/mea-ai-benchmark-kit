@@ -29,12 +29,11 @@ export class SttService {
     const whisperLang = process.env.WHISPER_LANGUAGE || 'vi';
 
     const formData = new FormData();
-    // Convert Buffer to Uint8Array for Blob compatibility
     const uint8Array = new Uint8Array(audioBlob);
     const blob = new Blob([uint8Array], { type: 'audio/wav' });
     formData.append('file', blob, 'recording.wav');
     formData.append('language', whisperLang);
-    formData.append('response_format', 'verbose_json');
+    formData.append('diarize', 'true'); // Enable diarization
 
     const response = await fetch(`${whisperUrl}/inference`, {
       method: 'POST',
@@ -42,7 +41,7 @@ export class SttService {
     });
 
     if (!response.ok) {
-      throw new Error(`Whisper API error: ${response.statusText}`);
+      throw new Error(`WhisperX API error: ${response.statusText}`);
     }
 
     const data = await response.json();
@@ -55,6 +54,7 @@ export class SttService {
 
   /**
    * Convert transcription segments to format for LLM role detection
+   * Uses speaker labels from WhisperX as initial hints
    */
   prepareSegmentsForRoleDetection(transcription: {
     text: string;
@@ -62,7 +62,7 @@ export class SttService {
   }): { role: string; raw_text: string; start: number; end: number }[] {
     if (transcription.segments.length > 0) {
       return transcription.segments.map((seg) => ({
-        role: 'Người nói', // Placeholder - LLM will determine actual role
+        role: seg.speaker || 'Người nói', // Use WhisperX speaker label if available
         raw_text: seg.text,
         start: seg.start,
         end: seg.end,
