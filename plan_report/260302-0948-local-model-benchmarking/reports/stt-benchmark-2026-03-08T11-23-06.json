@@ -1,0 +1,100 @@
+{
+  "id": "stt-benchmark-1772968986911",
+  "type": "stt",
+  "createdAt": "2026-03-08T11:23:06.911Z",
+  "hardware": {
+    "cpu": "i7-11800H @ 2.30GHz",
+    "ram": "16GB",
+    "gpu": "RTX 3050 Ti",
+    "vram": "4GB"
+  },
+  "results": [
+    {
+      "engine": "whisperx",
+      "variant": "small",
+      "scenarioId": "scenario-001",
+      "scenarioName": "Viêm họng cấp - Nam 35 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T11:23:06.722Z",
+          "metrics": {
+            "engine": "whisperx",
+            "variant": "small",
+            "transcribedText": "",
+            "latencyMs": 107,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "error": "Server returned 500: {\"detail\":\"All audio loading methods failed for: D:\\\\Senlyzer\\\\agent_skill_kits\\\\medical-examination-assistant-be-kit\\\\benchmarks\\\\test-data\\\\audio\\\\scenario-001.mp3\"}"
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 0,
+        "avgRtf": 0,
+        "avgWer": 1,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 100
+      }
+    },
+    {
+      "engine": "whisperx",
+      "variant": "small",
+      "scenarioId": "scenario-002",
+      "scenarioName": "Đau dạ dày - Viêm loét dạ dày tá tràng - Nữ 42 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T11:23:06.816Z",
+          "metrics": {
+            "engine": "whisperx",
+            "variant": "small",
+            "transcribedText": "",
+            "latencyMs": 91,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "error": "Server returned 500: {\"detail\":\"All audio loading methods failed for: D:\\\\Senlyzer\\\\agent_skill_kits\\\\medical-examination-assistant-be-kit\\\\benchmarks\\\\test-data\\\\audio\\\\scenario-002.mp3\"}"
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 0,
+        "avgRtf": 0,
+        "avgWer": 1,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 100
+      }
+    },
+    {
+      "engine": "whisperx",
+      "variant": "small",
+      "scenarioId": "scenario-003",
+      "scenarioName": "Tăng huyết áp + Đái tháo đường type 2 + Rối loạn lipid máu - Nam 58 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T11:23:06.909Z",
+          "metrics": {
+            "engine": "whisperx",
+            "variant": "small",
+            "transcribedText": "",
+            "latencyMs": 93,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "error": "Server returned 500: {\"detail\":\"All audio loading methods failed for: D:\\\\Senlyzer\\\\agent_skill_kits\\\\medical-examination-assistant-be-kit\\\\benchmarks\\\\test-data\\\\audio\\\\scenario-003.mp3\"}"
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 0,
+        "avgRtf": 0,
+        "avgWer": 1,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 100
+      }
+    }
+  ]
+}

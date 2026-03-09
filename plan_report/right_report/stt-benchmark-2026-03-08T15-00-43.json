@@ -1,0 +1,103 @@
+{
+  "id": "stt-benchmark-1772982043915",
+  "type": "stt",
+  "createdAt": "2026-03-08T15:00:43.915Z",
+  "hardware": {
+    "cpu": "i7-11800H @ 2.30GHz",
+    "ram": "16GB",
+    "gpu": "RTX 3050 Ti",
+    "vram": "4GB"
+  },
+  "results": [
+    {
+      "engine": "parakeet",
+      "variant": "parakeet-ctc-0.6b-vi",
+      "scenarioId": "scenario-001",
+      "scenarioName": "Viêm họng cấp - Nam 35 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T15:00:38.049Z",
+          "metrics": {
+            "engine": "parakeet",
+            "variant": "parakeet-ctc-0.6b-vi",
+            "transcribedText": "[object Object]",
+            "latencyMs": 1950,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "wer": 1,
+            "medicalTermAccuracy": 0
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 1950,
+        "avgRtf": 0.021666666666666667,
+        "avgWer": 1,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 0
+      }
+    },
+    {
+      "engine": "parakeet",
+      "variant": "parakeet-ctc-0.6b-vi",
+      "scenarioId": "scenario-002",
+      "scenarioName": "Đau dạ dày - Viêm loét dạ dày tá tràng - Nữ 42 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T15:00:40.576Z",
+          "metrics": {
+            "engine": "parakeet",
+            "variant": "parakeet-ctc-0.6b-vi",
+            "transcribedText": "[object Object]",
+            "latencyMs": 2524,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "wer": 1,
+            "medicalTermAccuracy": 0
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 2524,
+        "avgRtf": 0.014022222222222222,
+        "avgWer": 1,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 0
+      }
+    },
+    {
+      "engine": "parakeet",
+      "variant": "parakeet-ctc-0.6b-vi",
+      "scenarioId": "scenario-003",
+      "scenarioName": "Tăng huyết áp + Đái tháo đường type 2 + Rối loạn lipid máu - Nam 58 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T15:00:43.913Z",
+          "metrics": {
+            "engine": "parakeet",
+            "variant": "parakeet-ctc-0.6b-vi",
+            "transcribedText": "[object Object]",
+            "latencyMs": 3335,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "wer": 1,
+            "medicalTermAccuracy": 0
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 3335,
+        "avgRtf": 0.011116666666666667,
+        "avgWer": 1,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 0
+      }
+    }
+  ]
+}

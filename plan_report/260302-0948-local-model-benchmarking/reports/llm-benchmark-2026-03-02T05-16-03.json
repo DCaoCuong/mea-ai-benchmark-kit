@@ -1,0 +1,43 @@
+{
+  "id": "llm-benchmark-1772428563409",
+  "type": "llm",
+  "createdAt": "2026-03-02T05:16:03.409Z",
+  "hardware": {
+    "cpu": "i7-11800H @ 2.30GHz",
+    "ram": "16GB",
+    "gpu": "RTX 3050 Ti",
+    "vram": "4GB"
+  },
+  "results": [
+    {
+      "taskName": "Role Detection",
+      "model": "gemma2:2b",
+      "scenarioId": "quick-01",
+      "scenarioName": "Viêm họng cấp (Quick Test)",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-02T05:16:02.910Z",
+          "metrics": {
+            "model": "gemma2:2b",
+            "content": "```json\n{\"roles\": [\"Bác sĩ\", \"Bệnh nhân\"]} \n``` \n",
+            "latencyMs": 512,
+            "promptTokens": 239,
+            "completionTokens": 22,
+            "totalTokens": 261,
+            "jsonCompliant": true
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 512,
+        "minLatencyMs": 512,
+        "maxLatencyMs": 512,
+        "avgPromptTokens": 239,
+        "avgCompletionTokens": 22,
+        "jsonComplianceRate": 100,
+        "errorRate": 0
+      }
+    }
+  ]
+}

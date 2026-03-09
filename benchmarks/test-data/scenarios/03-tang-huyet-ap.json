@@ -1,0 +1,288 @@
+{
+    "id": "scenario-003",
+    "name": "Tăng huyết áp + Đái tháo đường type 2 + Rối loạn lipid máu - Nam 58 tuổi",
+    "difficulty": "hard",
+    "specialty": "Cardio_Endo",
+    "metadata": {
+        "patientAge": 58,
+        "patientGender": "Nam",
+        "chiefComplaint": "Tái khám tăng huyết áp, kiểm soát đường huyết kém, mỡ máu cao",
+        "estimatedAudioLengthSeconds": 300,
+        "numberOfTurns": 18,
+        "medicalTermCount": 22
+    },
+    "transcript": "Bác sĩ: Chào anh Minh, hôm nay anh tái khám đúng hẹn rồi. Anh cảm thấy thế nào?\nBệnh nhân: Dạ chào bác sĩ. Mấy tuần nay em hay bị đau đầu, nhất là buổi sáng. Mờ mắt thỉnh thoảng nữa.\nBác sĩ: Anh có đo huyết áp ở nhà không? Số liệu thế nào?\nBệnh nhân: Dạ em đo thì dao động 150-160 trên 95-100. Hôm nào quên uống thuốc thì lên 170.\nBác sĩ: Anh đang uống thuốc hạ áp gì? Có uống đều không?\nBệnh nhân: Em uống amlodipine 5mg mỗi sáng. Nhưng thú thật có hôm em quên, khoảng 2-3 lần mỗi tuần.\nBác sĩ: Về đường huyết, anh có theo dõi đường huyết lúc đói không?\nBệnh nhân: Dạ có. Em đo buổi sáng thường được 180-200 mg/dL. Sau ăn thì lên 250-280.\nBác sĩ: Cao quá. Anh đang uống thuốc đái tháo đường gì?\nBệnh nhân: Em uống metformin 500mg ngày 2 lần. Nhưng em hay bị đầy bụng, tiêu chảy nên thỉnh thoảng em bỏ thuốc.\nBác sĩ: Anh có triệu chứng gì khác không? Tê chân, mờ mắt, khát nước nhiều, đi tiểu nhiều?\nBệnh nhân: Dạ em hay tê 2 bàn chân, nhất là ban đêm. Khát nước nhiều, đi tiểu đêm 3-4 lần.\nBác sĩ: Lần xét nghiệm máu gần nhất là khi nào? Kết quả HbA1c và mỡ máu thế nào?\nBệnh nhân: Dạ cách đây 3 tháng. HbA1c là 9.2%. Cholesterol toàn phần 260, LDL là 170, triglyceride 300.\nBác sĩ: Anh có uống thuốc mỡ máu không?\nBệnh nhân: Dạ không. Lần trước bác sĩ có kê nhưng em sợ hại gan nên không uống.\nBác sĩ: Tôi đo huyết áp anh tại phòng khám nhé. Huyết áp 165/100 mmHg, mạch 82 lần/phút. Cân nặng 78kg, chiều cao 165cm, BMI 28.7 - thừa cân. Khám chân: giảm cảm giác rung 2 bàn chân, mạch mu chân 2 bên bình thường. Anh Minh ơi, tình trạng của anh hiện tại khá nghiêm trọng. Huyết áp không kiểm soát được, đường huyết rất cao, mỡ máu cao. Ba vấn đề này kết hợp lại tăng nguy cơ đột quỵ, nhồi máu cơ tim và biến chứng thận rất nhiều.\nBệnh nhân: Dạ em cũng lo lắm. Vậy bác sĩ điều chỉnh thuốc giúp em.\nBác sĩ: Tôi điều chỉnh phác đồ như sau. Huyết áp: tăng amlodipine lên 10mg, thêm losartan 50mg buổi sáng. Đái tháo đường: giữ metformin 500mg nhưng đổi sang dạng XR uống 1 lần buổi tối sau ăn để giảm tác dụng phụ tiêu hóa, thêm gliclazide MR 60mg buổi sáng. Mỡ máu: atorvastatin 20mg uống tối, thuốc an toàn gan ở liều này. Tê chân là biến chứng thần kinh ngoại biên do đái tháo đường, kê thêm methylcobalamin 500mcg ngày 3 lần.\nBệnh nhân: Dạ vâng. Bác sĩ cho em hỏi, em có cần kiêng gì và tập thể dục thế nào?\nBác sĩ: Anh cần giảm cân, mục tiêu BMI dưới 25. Ăn giảm muối dưới 5g/ngày, giảm đường, giảm mỡ. Tập đi bộ nhanh 30 phút mỗi ngày, ít nhất 5 ngày/tuần. Bỏ rượu bia tuyệt đối. Xét nghiệm lại máu sau 3 tháng: HbA1c, chức năng thận eGFR, creatinine, men gan, mỡ máu. Kiểm tra mắt đái tháo đường mỗi năm.",
+    "segments": [
+        {
+            "index": 0,
+            "text": "Chào anh Minh, hôm nay anh tái khám đúng hẹn rồi. Anh cảm thấy thế nào?",
+            "role": "Bác sĩ",
+            "type": "greeting"
+        },
+        {
+            "index": 1,
+            "text": "Dạ chào bác sĩ. Mấy tuần nay em hay bị đau đầu, nhất là buổi sáng. Mờ mắt thỉnh thoảng nữa.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 2,
+            "text": "Anh có đo huyết áp ở nhà không? Số liệu thế nào?",
+            "role": "Bác sĩ",
+            "type": "symptom_inquiry"
+        },
+        {
+            "index": 3,
+            "text": "Dạ em đo thì dao động 150-160 trên 95-100. Hôm nào quên uống thuốc thì lên 170.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 4,
+            "text": "Anh đang uống thuốc hạ áp gì? Có uống đều không?",
+            "role": "Bác sĩ",
+            "type": "symptom_inquiry"
+        },
+        {
+            "index": 5,
+            "text": "Em uống amlodipine 5mg mỗi sáng. Nhưng thú thật có hôm em quên, khoảng 2-3 lần mỗi tuần.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 6,
+            "text": "Về đường huyết, anh có theo dõi đường huyết lúc đói không?",
+            "role": "Bác sĩ",
+            "type": "symptom_inquiry"
+        },
+        {
+            "index": 7,
+            "text": "Dạ có. Em đo buổi sáng thường được 180-200 mg/dL. Sau ăn thì lên 250-280.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 8,
+            "text": "Cao quá. Anh đang uống thuốc đái tháo đường gì?",
+            "role": "Bác sĩ",
+            "type": "symptom_inquiry"
+        },
+        {
+            "index": 9,
+            "text": "Em uống metformin 500mg ngày 2 lần. Nhưng em hay bị đầy bụng, tiêu chảy nên thỉnh thoảng em bỏ thuốc.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 10,
+            "text": "Anh có triệu chứng gì khác không? Tê chân, mờ mắt, khát nước nhiều, đi tiểu nhiều?",
+            "role": "Bác sĩ",
+            "type": "symptom_inquiry"
+        },
+        {
+            "index": 11,
+            "text": "Dạ em hay tê 2 bàn chân, nhất là ban đêm. Khát nước nhiều, đi tiểu đêm 3-4 lần.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 12,
+            "text": "Lần xét nghiệm máu gần nhất là khi nào? Kết quả HbA1c và mỡ máu thế nào?",
+            "role": "Bác sĩ",
+            "type": "symptom_inquiry"
+        },
+        {
+            "index": 13,
+            "text": "Dạ cách đây 3 tháng. HbA1c là 9.2%. Cholesterol toàn phần 260, LDL là 170, triglyceride 300.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 14,
+            "text": "Anh có uống thuốc mỡ máu không?",
+            "role": "Bác sĩ",
+            "type": "symptom_inquiry"
+        },
+        {
+            "index": 15,
+            "text": "Dạ không. Lần trước bác sĩ có kê nhưng em sợ hại gan nên không uống.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 16,
+            "text": "Tôi đo huyết áp anh tại phòng khám nhé. Huyết áp 165/100 mmHg, mạch 82 lần/phút. Cân nặng 78kg, chiều cao 165cm, BMI 28.7 - thừa cân. Khám chân: giảm cảm giác rung 2 bàn chân, mạch mu chân 2 bên bình thường. Anh Minh ơi, tình trạng của anh hiện tại khá nghiêm trọng. Huyết áp không kiểm soát được, đường huyết rất cao, mỡ máu cao. Ba vấn đề này kết hợp lại tăng nguy cơ đột quỵ, nhồi máu cơ tim và biến chứng thận rất nhiều.",
+            "role": "Bác sĩ",
+            "type": "examination"
+        },
+        {
+            "index": 17,
+            "text": "Dạ em cũng lo lắm. Vậy bác sĩ điều chỉnh thuốc giúp em.",
+            "role": "Bệnh nhân",
+            "type": "acknowledgment"
+        },
+        {
+            "index": 18,
+            "text": "Tôi điều chỉnh phác đồ như sau. Huyết áp: tăng amlodipine lên 10mg, thêm losartan 50mg buổi sáng. Đái tháo đường: giữ metformin 500mg nhưng đổi sang dạng XR uống 1 lần buổi tối sau ăn để giảm tác dụng phụ tiêu hóa, thêm gliclazide MR 60mg buổi sáng. Mỡ máu: atorvastatin 20mg uống tối, thuốc an toàn gan ở liều này. Tê chân là biến chứng thần kinh ngoại biên do đái tháo đường, kê thêm methylcobalamin 500mcg ngày 3 lần.",
+            "role": "Bác sĩ",
+            "type": "prescription"
+        },
+        {
+            "index": 19,
+            "text": "Dạ vâng. Bác sĩ cho em hỏi, em có cần kiêng gì và tập thể dục thế nào?",
+            "role": "Bệnh nhân",
+            "type": "acknowledgment"
+        },
+        {
+            "index": 20,
+            "text": "Anh cần giảm cân, mục tiêu BMI dưới 25. Ăn giảm muối dưới 5g/ngày, giảm đường, giảm mỡ. Tập đi bộ nhanh 30 phút mỗi ngày, ít nhất 5 ngày/tuần. Bỏ rượu bia tuyệt đối. Xét nghiệm lại máu sau 3 tháng: HbA1c, chức năng thận eGFR, creatinine, men gan, mỡ máu. Kiểm tra mắt đái tháo đường mỗi năm.",
+            "role": "Bác sĩ",
+            "type": "prescription"
+        }
+    ],
+    "groundTruth": {
+        "roleDetection": {
+            "roles": [
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ"
+            ],
+            "description": "21 segments: hội thoại dài, đa bệnh lý, nhiều hỏi-đáp về thuốc"
+        },
+        "medicalFix": [
+            {
+                "input": "bệnh nhân bị tang huyết áp",
+                "expected": "bệnh nhân bị tăng huyết áp",
+                "errorType": "spelling"
+            },
+            {
+                "input": "đái tháo đường típ 2",
+                "expected": "đái tháo đường type 2",
+                "errorType": "spelling"
+            },
+            {
+                "input": "uống amlodipin 5mg",
+                "expected": "uống amlodipine 5mg",
+                "errorType": "drug_name"
+            },
+            {
+                "input": "kê losatan 50mg",
+                "expected": "kê losartan 50mg",
+                "errorType": "drug_name"
+            },
+            {
+                "input": "uống metphormin 500mg",
+                "expected": "uống metformin 500mg",
+                "errorType": "drug_name"
+            },
+            {
+                "input": "thêm gliclazid MR 60mg",
+                "expected": "thêm gliclazide MR 60mg",
+                "errorType": "drug_name"
+            },
+            {
+                "input": "atorvastain 20mg uống tối",
+                "expected": "atorvastatin 20mg uống tối",
+                "errorType": "drug_name"
+            },
+            {
+                "input": "HbA1C là 9,2 phần trăm",
+                "expected": "HbA1c là 9.2%",
+                "errorType": "unit"
+            },
+            {
+                "input": "huyết áp 165 trên 100 mmHG",
+                "expected": "huyết áp 165/100 mmHg",
+                "errorType": "unit"
+            },
+            {
+                "input": "biến chứng thần kinh ngoai biên",
+                "expected": "biến chứng thần kinh ngoại biên",
+                "errorType": "terminology"
+            },
+            {
+                "input": "methylcobalamine 500mcg",
+                "expected": "methylcobalamin 500mcg",
+                "errorType": "drug_name"
+            },
+            {
+                "input": "rối loạn líp máu",
+                "expected": "rối loạn lipid máu",
+                "errorType": "terminology"
+            }
+        ],
+        "soap": {
+            "subjective": "Bệnh nhân nam 58 tuổi, tái khám tăng huyết áp, đái tháo đường type 2, rối loạn lipid máu. Triệu chứng: đau đầu buổi sáng, mờ mắt. Huyết áp tự đo 150-160/95-100 mmHg, lên 170 khi quên thuốc. Đường huyết đói 180-200 mg/dL, sau ăn 250-280 mg/dL. HbA1c 9.2% (3 tháng trước). Cholesterol toàn phần 260, LDL 170, Triglyceride 300. Tê 2 bàn chân về đêm, khát nước nhiều, tiểu đêm 3-4 lần. Đang dùng amlodipine 5mg (hay quên 2-3 lần/tuần) và metformin 500mg x 2 lần/ngày (bỏ thuốc do tác dụng phụ tiêu hóa). Không uống thuốc mỡ máu (sợ hại gan).",
+            "objective": "Huyết áp 165/100 mmHg, mạch 82 lần/phút. Cân nặng 78kg, chiều cao 165cm, BMI 28.7 (thừa cân). Giảm cảm giác rung 2 bàn chân. Mạch mu chân 2 bên bình thường.",
+            "assessment": "1. Tăng huyết áp độ 2, kiểm soát kém do tuân thủ điều trị kém. 2. Đái tháo đường type 2, kiểm soát kém (HbA1c 9.2%), biến chứng thần kinh ngoại biên. 3. Rối loạn lipid máu hỗn hợp (tăng cholesterol, LDL, triglyceride), chưa điều trị.",
+            "plan": "1. Tăng huyết áp: tăng amlodipine 10mg + thêm losartan 50mg buổi sáng. 2. Đái tháo đường: chuyển metformin XR 500mg x 1 lần tối sau ăn + thêm gliclazide MR 60mg sáng. 3. Rối loạn lipid máu: atorvastatin 20mg tối. 4. Biến chứng thần kinh: methylcobalamin 500mcg x 3 lần/ngày. 5. Thay đổi lối sống: giảm cân (mục tiêu BMI<25), giảm muối <5g/ngày, giảm đường-mỡ, đi bộ nhanh 30 phút/ngày x 5 ngày/tuần, bỏ rượu bia. 6. XN máu sau 3 tháng: HbA1c, eGFR, creatinine, men gan, lipid máu. 7. Khám mắt đái tháo đường hàng năm."
+        },
+        "icdCodes": [
+            "I10",
+            "E11.9",
+            "E78.0",
+            "G63"
+        ],
+        "icdCodesDetail": [
+            {
+                "code": "I10",
+                "description": "Tăng huyết áp nguyên phát (vô căn)"
+            },
+            {
+                "code": "E11.9",
+                "description": "Đái tháo đường type 2 không biến chứng"
+            },
+            {
+                "code": "E78.0",
+                "description": "Tăng cholesterol máu thuần túy"
+            },
+            {
+                "code": "G63",
+                "description": "Bệnh thần kinh ngoại biên trong các bệnh phân loại nơi khác (biến chứng ĐTĐ)"
+            }
+        ],
+        "medicalAdvice": "Bệnh nhân có hội chứng chuyển hóa (tăng huyết áp + đái tháo đường + rối loạn lipid máu + thừa cân), nguy cơ tim mạch cao. Cần đánh giá nguy cơ tim mạch 10 năm theo SCORE2 hoặc Framingham. Mục tiêu huyết áp: <130/80 mmHg (theo JNC 8 và ESC 2023 cho bệnh nhân đái tháo đường). Mục tiêu HbA1c: <7% (ADA 2025). Mục tiêu LDL: <70 mg/dL (bệnh nhân nguy cơ cao). Losartan được chọn vì có tác dụng bảo vệ thận (nephroprotective) ở bệnh nhân ĐTĐ. Metformin XR giảm tác dụng phụ đường tiêu hóa so với dạng IR. Gliclazide MR an toàn hơn glibenclamide về nguy cơ hạ đường huyết. Atorvastatin 20mg tương ứng giảm LDL 35-45%, an toàn gan ở liều này, cần kiểm tra men gan sau 4-6 tuần. Cần ECG, siêu âm tim, đánh giá chức năng thận định kỳ. Xem xét thêm aspirin nếu nguy cơ tim mạch 10 năm >10%.",
+        "medicalTerms": [
+            "tăng huyết áp",
+            "đái tháo đường",
+            "HbA1c",
+            "cholesterol",
+            "LDL",
+            "triglyceride",
+            "amlodipine",
+            "losartan",
+            "metformin",
+            "gliclazide",
+            "atorvastatin",
+            "methylcobalamin",
+            "BMI",
+            "thần kinh ngoại biên",
+            "eGFR",
+            "creatinine",
+            "hội chứng chuyển hóa",
+            "nhồi máu cơ tim",
+            "đột quỵ",
+            "lipid máu",
+            "rối loạn lipid",
+            "insulin"
+        ]
+    }
+}

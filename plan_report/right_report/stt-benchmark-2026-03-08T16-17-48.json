@@ -1,0 +1,97 @@
+{
+  "id": "stt-benchmark-1772986668751",
+  "type": "stt",
+  "createdAt": "2026-03-08T16:17:48.751Z",
+  "hardware": {
+    "cpu": "i7-11800H @ 2.30GHz",
+    "ram": "16GB",
+    "gpu": "RTX 3050 Ti",
+    "vram": "4GB"
+  },
+  "results": [
+    {
+      "engine": "whisperlive",
+      "variant": "small",
+      "scenarioId": "scenario-001",
+      "scenarioName": "Viêm họng cấp - Nam 35 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T16:17:46.323Z",
+          "metrics": {
+            "engine": "whisperlive",
+            "variant": "small",
+            "transcribedText": "",
+            "latencyMs": 1473,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 0,
+        "avgRtf": 0,
+        "avgWer": 1,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 100
+      }
+    },
+    {
+      "engine": "whisperlive",
+      "variant": "small",
+      "scenarioId": "scenario-002",
+      "scenarioName": "Đau dạ dày - Viêm loét dạ dày tá tràng - Nữ 42 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T16:17:47.563Z",
+          "metrics": {
+            "engine": "whisperlive",
+            "variant": "small",
+            "transcribedText": "",
+            "latencyMs": 1239,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 0,
+        "avgRtf": 0,
+        "avgWer": 1,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 100
+      }
+    },
+    {
+      "engine": "whisperlive",
+      "variant": "small",
+      "scenarioId": "scenario-003",
+      "scenarioName": "Tăng huyết áp + Đái tháo đường type 2 + Rối loạn lipid máu - Nam 58 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T16:17:48.749Z",
+          "metrics": {
+            "engine": "whisperlive",
+            "variant": "small",
+            "transcribedText": "",
+            "latencyMs": 1185,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 0,
+        "avgRtf": 0,
+        "avgWer": 1,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 100
+      }
+    }
+  ]
+}

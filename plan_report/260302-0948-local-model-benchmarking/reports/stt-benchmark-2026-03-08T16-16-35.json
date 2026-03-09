@@ -1,0 +1,12 @@
+{
+  "id": "stt-benchmark-1772986595704",
+  "type": "stt",
+  "createdAt": "2026-03-08T16:16:35.704Z",
+  "hardware": {
+    "cpu": "i7-11800H @ 2.30GHz",
+    "ram": "16GB",
+    "gpu": "RTX 3050 Ti",
+    "vram": "4GB"
+  },
+  "results": []
+}

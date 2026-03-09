@@ -1,0 +1,191 @@
+{
+    "description": "Test cases cho Medical Text Fixer benchmark. 25 cặp input/expected covering các lỗi phổ biến khi STT nhận dạng thuật ngữ y khoa tiếng Việt.",
+    "totalCases": 25,
+    "categories": {
+        "spelling": "Lỗi chính tả y khoa thông thường",
+        "drug_name": "Tên thuốc sai/thiếu ký tự",
+        "terminology": "Thuật ngữ chuyên môn",
+        "unit": "Đơn vị đo lường y khoa",
+        "abbreviation": "Viết tắt y khoa",
+        "context": "Lỗi phụ thuộc ngữ cảnh"
+    },
+    "cases": [
+        {
+            "id": 1,
+            "input": "bệnh nhân bị viên họng cấp",
+            "expected": "bệnh nhân bị viêm họng cấp",
+            "errorType": "spelling",
+            "difficulty": "easy"
+        },
+        {
+            "id": 2,
+            "input": "kê đơn amoxicilin 500mg",
+            "expected": "kê đơn amoxicillin 500mg",
+            "errorType": "drug_name",
+            "difficulty": "easy"
+        },
+        {
+            "id": 3,
+            "input": "nhiệt đô 37.8 đô",
+            "expected": "nhiệt độ 37.8°C",
+            "errorType": "unit",
+            "difficulty": "medium"
+        },
+        {
+            "id": 4,
+            "input": "viên phổi mạn tính",
+            "expected": "viêm phổi mạn tính",
+            "errorType": "spelling",
+            "difficulty": "easy"
+        },
+        {
+            "id": 5,
+            "input": "uống ibuprophen giảm đau",
+            "expected": "uống ibuprofen giảm đau",
+            "errorType": "drug_name",
+            "difficulty": "medium"
+        },
+        {
+            "id": 6,
+            "input": "bệnh nhân có tiền sử THA",
+            "expected": "bệnh nhân có tiền sử THA",
+            "errorType": "abbreviation",
+            "difficulty": "easy",
+            "note": "THA (tăng huyết áp) là viết tắt chuẩn, giữ nguyên"
+        },
+        {
+            "id": 7,
+            "input": "huyết áp 165 trên 100 mmHG",
+            "expected": "huyết áp 165/100 mmHg",
+            "errorType": "unit",
+            "difficulty": "medium"
+        },
+        {
+            "id": 8,
+            "input": "kê omepazole 20mg",
+            "expected": "kê omeprazole 20mg",
+            "errorType": "drug_name",
+            "difficulty": "medium"
+        },
+        {
+            "id": 9,
+            "input": "test helicobacte pylori",
+            "expected": "test Helicobacter pylori",
+            "errorType": "terminology",
+            "difficulty": "hard"
+        },
+        {
+            "id": 10,
+            "input": "đau bụng vùng thượng vi",
+            "expected": "đau bụng vùng thượng vị",
+            "errorType": "terminology",
+            "difficulty": "easy"
+        },
+        {
+            "id": 11,
+            "input": "uống amlodipin 5mg mỗi sáng",
+            "expected": "uống amlodipine 5mg mỗi sáng",
+            "errorType": "drug_name",
+            "difficulty": "medium"
+        },
+        {
+            "id": 12,
+            "input": "HbA1C là 9,2 phần trăm",
+            "expected": "HbA1c là 9.2%",
+            "errorType": "unit",
+            "difficulty": "hard"
+        },
+        {
+            "id": 13,
+            "input": "em bi xơ gan",
+            "expected": "em bị xơ gan",
+            "errorType": "spelling",
+            "difficulty": "easy"
+        },
+        {
+            "id": 14,
+            "input": "kê atorvastain 20mg",
+            "expected": "kê atorvastatin 20mg",
+            "errorType": "drug_name",
+            "difficulty": "medium"
+        },
+        {
+            "id": 15,
+            "input": "biến chứng thần kinh ngoai biên",
+            "expected": "biến chứng thần kinh ngoại biên",
+            "errorType": "terminology",
+            "difficulty": "easy"
+        },
+        {
+            "id": 16,
+            "input": "rối loạn líp máu",
+            "expected": "rối loạn lipid máu",
+            "errorType": "terminology",
+            "difficulty": "medium"
+        },
+        {
+            "id": 17,
+            "input": "sucralphate 1g uống 4 lần",
+            "expected": "sucralfate 1g uống 4 lần",
+            "errorType": "drug_name",
+            "difficulty": "medium"
+        },
+        {
+            "id": 18,
+            "input": "kê losatan 50mg buổi sáng",
+            "expected": "kê losartan 50mg buổi sáng",
+            "errorType": "drug_name",
+            "difficulty": "medium"
+        },
+        {
+            "id": 19,
+            "input": "uống metphormin 500mg",
+            "expected": "uống metformin 500mg",
+            "errorType": "drug_name",
+            "difficulty": "easy"
+        },
+        {
+            "id": 20,
+            "input": "thêm gliclazid MR 60mg",
+            "expected": "thêm gliclazide MR 60mg",
+            "errorType": "drug_name",
+            "difficulty": "medium"
+        },
+        {
+            "id": 21,
+            "input": "bệnh nhân bị tieu chảy",
+            "expected": "bệnh nhân bị tiêu chảy",
+            "errorType": "spelling",
+            "difficulty": "easy"
+        },
+        {
+            "id": 22,
+            "input": "nội soi dạ dày ta tràng",
+            "expected": "nội soi dạ dày tá tràng",
+            "errorType": "spelling",
+            "difficulty": "easy"
+        },
+        {
+            "id": 23,
+            "input": "methylcobalamine 500mcg ngày 3 lần",
+            "expected": "methylcobalamin 500mcg ngày 3 lần",
+            "errorType": "drug_name",
+            "difficulty": "hard"
+        },
+        {
+            "id": 24,
+            "input": "đường huyết đói 180 miligam trên đề xi lít",
+            "expected": "đường huyết đói 180 mg/dL",
+            "errorType": "unit",
+            "difficulty": "hard"
+        },
+        {
+            "id": 25,
+            "input": "bệnh nhân được chẩn đoán viên phế quản cấp và viên xoang",
+            "expected": "bệnh nhân được chẩn đoán viêm phế quản cấp và viêm xoang",
+            "errorType": "spelling",
+            "difficulty": "medium",
+            "note": "Multiple errors in same sentence"
+        }
+    ]
+}

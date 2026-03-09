@@ -1,5 +1,5 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-import { GoogleGenerativeAIEmbeddings } from '@langchain/google-genai';
+import { OllamaEmbeddings } from '../agents/models/ollama-embeddings';
 import { MemoryVectorStore } from '@langchain/classic/vectorstores/memory';
 import { Document } from '@langchain/core/documents';
 import { RecursiveCharacterTextSplitter } from '@langchain/classic/text_splitter';
@@ -9,19 +9,14 @@ import * as path from 'path';
 @Injectable()
 export class VectorStoreService implements OnModuleInit {
   private store: MemoryVectorStore | null = null;
-  private readonly embeddings: GoogleGenerativeAIEmbeddings;
+  private readonly embeddings: OllamaEmbeddings;
   private readonly vectorStorePath: string;
   private readonly knowledgeBasePath: string;
 
   constructor() {
-    if (!process.env.GOOGLE_API_KEY) {
-      throw new Error('Missing GOOGLE_API_KEY environment variable');
-    }
-
-    this.embeddings = new GoogleGenerativeAIEmbeddings({
-      modelName: 'text-embedding-004',
-      apiKey: process.env.GOOGLE_API_KEY,
-    });
+    // Use local Ollama embeddings (no API key needed)
+    this.embeddings = new OllamaEmbeddings();
+    console.log('🔗 Using local Ollama embeddings (nomic-embed-text-v2-moe)');
 
     this.vectorStorePath = path.join(
       process.cwd(),

@@ -3,18 +3,34 @@ import { AgentState } from '../graph/agent.state';
 import { VectorStoreService } from '../../rag/vectorstore.service';
 import { Document } from '@langchain/core/documents';
 import {
-  getGroqClient,
-  GROQ_MODEL_STANDARD,
-  GROQ_MODEL_EXPERT,
-} from '../models/groq.models';
+  ollamaChat,
+  OLLAMA_MODEL_LIGHT,
+  OLLAMA_MODEL_EXPERT,
+} from '../models/ollama.models';
+
+/**
+ * Extract JSON from LLM response, handling markdown code blocks
+ */
+function extractJSON(text: string): string {
+  // Remove markdown code blocks if present
+  let cleaned = text.trim();
+
+  // Handle ```json ... ``` or ``` ... ```
+  const codeBlockMatch = cleaned.match(/```(?:json)?\s*([\s\S]*?)```/);
+  if (codeBlockMatch) {
+    cleaned = codeBlockMatch[1].trim();
+  }
+
+  return cleaned;
+}
 
 @Injectable()
 export class AgentNodesService {
-  constructor(private readonly vectorStoreService: VectorStoreService) {}
+  constructor(private readonly vectorStoreService: VectorStoreService) { }
 
   // --- 1. SCRIBE AGENT ---
   async scribeNode(state: AgentState): Promise<Partial<AgentState>> {
-    console.log('Scribe Agent working (Groq GPT-OSS-120B)...');
+    console.log(`📝 Scribe Agent working (Ollama ${OLLAMA_MODEL_LIGHT})...`);
 
     const prompt = `Bạn là thư ký y khoa chuyên nghiệp.
 Nhiệm vụ: Chuyển transcript hội thoại thành bệnh án chuẩn SOAP tiếng Việt.
@@ -32,18 +48,29 @@ Yêu cầu output JSON format:
 Chỉ trả về JSON hợp lệ, không có text khác.`;
 
     try {
-      const groq = getGroqClient();
-      const completion = await groq.chat.completions.create({
+      const completion = await ollamaChat({
         messages: [{ role: 'user', content: prompt }],
-        model: GROQ_MODEL_STANDARD,
+        model: OLLAMA_MODEL_LIGHT,
         temperature: 0.1,
         response_format: { type: 'json_object' },
       });
 
-      const soap = JSON.parse(completion.choices[0]?.message?.content || '{}');
+      const rawContent = completion.choices[0]?.message?.content || '{}';
+      console.log('📝 Scribe Raw Output (first 300 chars):', rawContent.substring(0, 300));
+
+      const jsonContent = extractJSON(rawContent);
+      const soap = JSON.parse(jsonContent);
+      console.log('✅ Scribe Agent completed - SOAP generated');
       return { soap };
     } catch (e) {
-      console.error('Scribe Agent Error:', e);
+      const errorMessage = e instanceof Error ? e.message : String(e);
+      console.error('❌ Scribe Agent Error:', errorMessage);
+
+      // Check if timeout
+      if (errorMessage.includes('timeout') || errorMessage.includes('abort')) {
+        console.error('   → Timeout detected! phi3:3.8b may be too slow');
+      }
+
       return {
         soap: {
           subjective: '',
@@ -57,7 +84,7 @@ Chỉ trả về JSON hợp lệ, không có text khác.`;
 
   // --- 2. ICD-10 AGENT ---
   async icdNode(state: AgentState): Promise<Partial<AgentState>> {
-    console.log('ICD-10 Agent working (Groq GPT-OSS-120B)...');
+    console.log(`🏥 ICD-10 Agent working (Ollama ${OLLAMA_MODEL_LIGHT})...`);
 
     const prompt = `Bạn là chuyên gia về mã hóa bệnh lý ICD-10.
 Chẩn đoán: "${state.soap.assessment}"
@@ -71,10 +98,9 @@ Ví dụ:
 }`;
 
     try {
-      const groq = getGroqClient();
-      const completion = await groq.chat.completions.create({
+      const completion = await ollamaChat({
         messages: [{ role: 'user', content: prompt }],
-        model: GROQ_MODEL_STANDARD,
+        model: OLLAMA_MODEL_LIGHT,
         temperature: 0.1,
         response_format: { type: 'json_object' },
       });
@@ -82,7 +108,8 @@ Ví dụ:
       const content = completion.choices[0]?.message?.content || '{}';
       console.log(' ICD-10 Raw Output:', content);
 
-      const parsed = JSON.parse(content);
+      const jsonContent = extractJSON(content);
+      const parsed = JSON.parse(jsonContent);
       // Normalize output
       const codes = Array.isArray(parsed)
         ? parsed
@@ -93,14 +120,20 @@ Ví dụ:
 
       return { icdCodes: finalCodes };
     } catch (e) {
-      console.error('ICD-10 Agent Error:', e);
+      const errorMessage = e instanceof Error ? e.message : String(e);
+      console.error('❌ ICD-10 Agent Error:', errorMessage);
+
+      if (errorMessage.includes('timeout') || errorMessage.includes('abort')) {
+        console.error('   → Timeout detected!');
+      }
+
       return { icdCodes: ['Error retrieving ICD codes'] };
     }
   }
 
   // --- 3. MEDICAL EXPERT AGENT (RAG) ---
   async expertNode(state: AgentState): Promise<Partial<AgentState>> {
-    console.log('🧑‍⚕️ Medical Expert Agent working (Groq GPT-OSS-20B)...');
+    console.log(`🧑‍⚕️ Medical Expert Agent working (Ollama ${OLLAMA_MODEL_EXPERT})...`);
 
     try {
       // 1. Retrieve relevant docs based on Subjective
@@ -137,10 +170,9 @@ LƯU Ý QUAN TRỌNG:
 - KHÔNG dùng tiếng Anh. 
 - Tất cả tiêu đề, nội dung phải hoàn toàn bằng TIẾNG VIỆT.`;
 
-      const groq = getGroqClient();
-      const completion = await groq.chat.completions.create({
+      const completion = await ollamaChat({
         messages: [{ role: 'user', content: prompt }],
-        model: GROQ_MODEL_EXPERT,
+        model: OLLAMA_MODEL_EXPERT,
         temperature: 0.2,
       });
 

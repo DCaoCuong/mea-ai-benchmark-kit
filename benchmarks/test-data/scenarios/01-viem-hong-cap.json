@@ -1,0 +1,138 @@
+{
+    "id": "scenario-001",
+    "name": "Viêm họng cấp - Nam 35 tuổi",
+    "difficulty": "easy",
+    "specialty": "ENT",
+    "metadata": {
+        "patientAge": 35,
+        "patientGender": "Nam",
+        "chiefComplaint": "Đau họng 3 ngày, sốt nhẹ",
+        "estimatedAudioLengthSeconds": 90,
+        "numberOfTurns": 8,
+        "medicalTermCount": 6
+    },
+    "transcript": "Bác sĩ: Chào anh, hôm nay anh đến khám có vấn đề gì?\nBệnh nhân: Dạ thưa bác sĩ, em bị đau họng 3 ngày nay rồi ạ. Nuốt nước bọt cũng đau, có sốt nhẹ.\nBác sĩ: Anh có ho không? Có sổ mũi hay chảy nước mũi gì không?\nBệnh nhân: Có ho khan bác sĩ, không có sổ mũi. Nhưng mấy hôm nay em mệt lắm.\nBác sĩ: Anh có dị ứng thuốc gì không? Trước giờ có bị viêm họng thường xuyên không?\nBệnh nhân: Dạ em không dị ứng gì ạ. Mỗi năm bị viêm họng một hai lần thôi.\nBác sĩ: Để tôi khám họng anh nhé. Mở miệng ra nào. Hm, họng đỏ, amidan sưng nhẹ cả 2 bên, có chấm mủ trắng nhỏ. Nhiệt độ 37.8 độ C. Đây là viêm họng cấp do nhiễm khuẩn. Tôi sẽ kê đơn amoxicillin 500mg uống ngày 3 lần, mỗi lần 1 viên, uống liên tục 7 ngày. Kèm paracetamol 500mg uống khi sốt trên 38 độ. Và súc họng bằng betadine pha loãng ngày 3 lần.\nBệnh nhân: Dạ vâng ạ. Em cảm ơn bác sĩ. Có cần kiêng gì không ạ?\nBác sĩ: Anh nên tránh đồ lạnh, đồ cay, uống nhiều nước ấm. Nếu sau 3 ngày không đỡ hoặc sốt cao hơn thì quay lại tái khám nhé.",
+    "segments": [
+        {
+            "index": 0,
+            "text": "Chào anh, hôm nay anh đến khám có vấn đề gì?",
+            "role": "Bác sĩ",
+            "type": "greeting"
+        },
+        {
+            "index": 1,
+            "text": "Dạ thưa bác sĩ, em bị đau họng 3 ngày nay rồi ạ. Nuốt nước bọt cũng đau, có sốt nhẹ.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 2,
+            "text": "Anh có ho không? Có sổ mũi hay chảy nước mũi gì không?",
+            "role": "Bác sĩ",
+            "type": "symptom_inquiry"
+        },
+        {
+            "index": 3,
+            "text": "Có ho khan bác sĩ, không có sổ mũi. Nhưng mấy hôm nay em mệt lắm.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 4,
+            "text": "Anh có dị ứng thuốc gì không? Trước giờ có bị viêm họng thường xuyên không?",
+            "role": "Bác sĩ",
+            "type": "symptom_inquiry"
+        },
+        {
+            "index": 5,
+            "text": "Dạ em không dị ứng gì ạ. Mỗi năm bị viêm họng một hai lần thôi.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 6,
+            "text": "Để tôi khám họng anh nhé. Mở miệng ra nào. Hm, họng đỏ, amidan sưng nhẹ cả 2 bên, có chấm mủ trắng nhỏ. Nhiệt độ 37.8 độ C. Đây là viêm họng cấp do nhiễm khuẩn. Tôi sẽ kê đơn amoxicillin 500mg uống ngày 3 lần, mỗi lần 1 viên, uống liên tục 7 ngày. Kèm paracetamol 500mg uống khi sốt trên 38 độ. Và súc họng bằng betadine pha loãng ngày 3 lần.",
+            "role": "Bác sĩ",
+            "type": "examination"
+        },
+        {
+            "index": 7,
+            "text": "Dạ vâng ạ. Em cảm ơn bác sĩ. Có cần kiêng gì không ạ?",
+            "role": "Bệnh nhân",
+            "type": "acknowledgment"
+        },
+        {
+            "index": 8,
+            "text": "Anh nên tránh đồ lạnh, đồ cay, uống nhiều nước ấm. Nếu sau 3 ngày không đỡ hoặc sốt cao hơn thì quay lại tái khám nhé.",
+            "role": "Bác sĩ",
+            "type": "prescription"
+        }
+    ],
+    "groundTruth": {
+        "roleDetection": {
+            "roles": [
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ"
+            ],
+            "description": "9 segments: BS-BN xen kẽ rõ ràng"
+        },
+        "medicalFix": [
+            {
+                "input": "bệnh nhân bị viên họng cấp",
+                "expected": "bệnh nhân bị viêm họng cấp",
+                "errorType": "spelling"
+            },
+            {
+                "input": "kê đơn amoxicilin 500mg",
+                "expected": "kê đơn amoxicillin 500mg",
+                "errorType": "drug_name"
+            },
+            {
+                "input": "họng đỏ, amidang sưng",
+                "expected": "họng đỏ, amidan sưng",
+                "errorType": "terminology"
+            },
+            {
+                "input": "nhiệt đô 37.8 đô",
+                "expected": "nhiệt độ 37.8°C",
+                "errorType": "unit"
+            },
+            {
+                "input": "uống paracetamol khi sốt trên 38 đô C",
+                "expected": "uống paracetamol khi sốt trên 38°C",
+                "errorType": "unit"
+            }
+        ],
+        "soap": {
+            "subjective": "Bệnh nhân nam 35 tuổi đến khám vì đau họng 3 ngày. Nuốt đau, sốt nhẹ. Ho khan, không sổ mũi. Mệt mỏi. Tiền sử viêm họng 1-2 lần/năm. Không dị ứng thuốc.",
+            "objective": "Họng đỏ, amidan sưng nhẹ 2 bên, có chấm mủ trắng nhỏ. Nhiệt độ 37.8°C.",
+            "assessment": "Viêm họng cấp do nhiễm khuẩn (J02.9)",
+            "plan": "Amoxicillin 500mg x 3 lần/ngày x 7 ngày. Paracetamol 500mg khi sốt >38°C. Súc họng betadine pha loãng x 3 lần/ngày. Tránh đồ lạnh, đồ cay. Uống nhiều nước ấm. Tái khám nếu không đỡ sau 3 ngày hoặc sốt cao hơn."
+        },
+        "icdCodes": [
+            "J02.9"
+        ],
+        "icdCodesDetail": [
+            {
+                "code": "J02.9",
+                "description": "Viêm họng cấp, không đặc hiệu"
+            }
+        ],
+        "medicalAdvice": "Viêm họng cấp do nhiễm khuẩn thường gặp, điều trị kháng sinh penicillin nhóm A (amoxicillin) là lựa chọn đầu tay. Cần uống đủ liệu trình 7 ngày để tránh kháng thuốc. Nếu nghi ngờ viêm họng do liên cầu nhóm A, có thể test nhanh strep hoặc cấy dịch họng. Theo dõi biến chứng: áp-xe quanh amidan, viêm cầu thận cấp sau nhiễm liên cầu. Nghỉ ngơi, bổ sung vitamin C, uống nước ấm.",
+        "medicalTerms": [
+            "viêm họng cấp",
+            "amidan",
+            "amoxicillin",
+            "paracetamol",
+            "betadine",
+            "nhiễm khuẩn"
+        ]
+    }
+}
