@@ -1,0 +1,3385 @@
+{
+  "id": "stt-benchmark-1772970263055",
+  "type": "stt",
+  "createdAt": "2026-03-08T11:44:23.055Z",
+  "hardware": {
+    "cpu": "i7-11800H @ 2.30GHz",
+    "ram": "16GB",
+    "gpu": "RTX 3050 Ti",
+    "vram": "4GB"
+  },
+  "results": [
+    {
+      "engine": "whisperx",
+      "variant": "small",
+      "scenarioId": "scenario-001",
+      "scenarioName": "Viêm họng cấp - Nam 35 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T11:43:41.788Z",
+          "metrics": {
+            "engine": "whisperx",
+            "variant": "small",
+            "transcribedText": " Chào anh, hôm nay anh điện khảm có vấn lý gì?Giờ thứ bạc xì, em bị đau hồng 3 ngày nay nuột thì thể hơi đau về lại sột nhà nữa Anh có hó nhiều không?Có bị sồn mùi hay ngạc mùi ý không?Giờ có hó kháng bạc xì à, nhưng không có sồn mùi Để tôi khảm hồng cho anh nhé Hồng hơi đỏ, A mi là anh thích sứng nhà 2 bên này Nhật đồ đó được là 30 bài phải tạm đồ Để lên tình trạng viếng hồng cấp nhé Tôi kêu cho anh một cho anh thuộc Amisulin 500ml mùa ngay thì uộng 3 viên duy trí trong vòng bài ngay nên còn sốt trên 38,5 độ thì anh uộn thêm Prasitomon Dạ vâng em rõ rõ cảm ơn bác",
+            "latencyMs": 11461,
+            "audioDurationMs": 11287,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "segments": [
+              {
+                "start": 0.402,
+                "end": 1.763,
+                "text": " Chào anh, hôm nay anh điện khảm có vấn lý gì?",
+                "words": [
+                  {
+                    "word": "Chào",
+                    "start": 0.402,
+                    "end": 0.482,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "anh,",
+                    "start": 0.502,
+                    "end": 0.742,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "hôm",
+                    "start": 0.762,
+                    "end": 0.842,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "nay",
+                    "start": 0.883,
+                    "end": 0.943,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "anh",
+                    "start": 0.963,
+                    "end": 1.023,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "điện",
+                    "start": 1.123,
+                    "end": 1.203,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "khảm",
+                    "start": 1.223,
+                    "end": 1.303,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "có",
+                    "start": 1.323,
+                    "end": 1.403,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "vấn",
+                    "start": 1.423,
+                    "end": 1.583,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "lý",
+                    "start": 1.623,
+                    "end": 1.683,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "gì?",
+                    "start": 1.703,
+                    "end": 1.763,
+                    "score": 0.02
+                  }
+                ],
+                "avg_logprob": -0.29933285643482765
+              },
+              {
+                "start": 1.783,
+                "end": 4.827,
+                "text": "Giờ thứ bạc xì, em bị đau hồng 3 ngày nay nuột thì thể hơi đau về lại sột nhà nữa Anh có hó nhiều không?",
+                "words": [
+                  {
+                    "word": "Giờ",
+                    "start": 1.783,
+                    "end": 1.884,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "thứ",
+                    "start": 1.904,
+                    "end": 1.984,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "bạc",
+                    "start": 2.004,
+                    "end": 2.064,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "xì,",
+                    "start": 2.084,
+                    "end": 2.164,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "em",
+                    "start": 2.184,
+                    "end": 2.344,
+                    "score": 0.02
+                  },
+                  {
+                    "word": "bị",
+                    "start": 2.424,
+                    "end": 2.464,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "đau",
+                    "start": 2.484,
+                    "end": 2.544,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "hồng",
+                    "start": 2.564,
+                    "end": 2.644,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "3",
+                    "start": 2.664,
+                    "end": 2.684,
+                    "score": 0.017
+                  },
+                  {
+                    "word": "ngày",
+                    "start": 2.704,
+                    "end": 2.785,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "nay",
+                    "start": 2.805,
+                    "end": 2.865,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nuột",
+                    "start": 2.945,
+                    "end": 3.045,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "thì",
+                    "start": 3.065,
+                    "end": 3.125,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "thể",
+                    "start": 3.145,
+                    "end": 3.205,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "hơi",
+                    "start": 3.225,
+                    "end": 3.305,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "đau",
+                    "start": 3.325,
+                    "end": 3.385,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "về",
+                    "start": 3.405,
+                    "end": 3.465,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "lại",
+                    "start": 3.485,
+                    "end": 3.545,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "sột",
+                    "start": 3.565,
+                    "end": 3.686,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nhà",
+                    "start": 3.706,
+                    "end": 3.766,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "nữa",
+                    "start": 3.786,
+                    "end": 3.846,
+                    "score": 0.017
+                  },
+                  {
+                    "word": "Anh",
+                    "start": 3.866,
+                    "end": 3.926,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "có",
+                    "start": 3.946,
+                    "end": 4.026,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "hó",
+                    "start": 4.046,
+                    "end": 4.106,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nhiều",
+                    "start": 4.126,
+                    "end": 4.266,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "không?",
+                    "start": 4.286,
+                    "end": 4.827,
+                    "score": 0.017
+                  }
+                ],
+                "avg_logprob": -0.29933285643482765
+              },
+              {
+                "start": 4.847,
+                "end": 8.811,
+                "text": "Có bị sồn mùi hay ngạc mùi ý không?",
+                "words": [
+                  {
+                    "word": "Có",
+                    "start": 4.847,
+                    "end": 4.907,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "bị",
+                    "start": 5.127,
+                    "end": 5.167,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "sồn",
+                    "start": 5.187,
+                    "end": 5.307,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "mùi",
+                    "start": 5.327,
+                    "end": 5.487,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "hay",
+                    "start": 5.507,
+                    "end": 5.588,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "ngạc",
+                    "start": 5.608,
+                    "end": 5.688,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "mùi",
+                    "start": 5.708,
+                    "end": 5.768,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "ý",
+                    "start": 5.788,
+                    "end": 5.808,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "không?",
+                    "start": 5.828,
+                    "end": 8.811,
+                    "score": 0.014
+                  }
+                ],
+                "avg_logprob": -0.29933285643482765
+              },
+              {
+                "start": 8.831,
+                "end": 28.452,
+                "text": "Giờ có hó kháng bạc xì à, nhưng không có sồn mùi Để tôi khảm hồng cho anh nhé Hồng hơi đỏ, A mi là anh thích sứng nhà 2 bên này Nhật đồ đó được là 30 bài phải tạm đồ Để lên tình trạng viếng hồng cấp nhé Tôi kêu cho anh một",
+                "words": [
+                  {
+                    "word": "Giờ",
+                    "start": 8.831,
+                    "end": 8.891,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "có",
+                    "start": 9.051,
+                    "end": 9.151,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "hó",
+                    "start": 9.191,
+                    "end": 9.312,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "kháng",
+                    "start": 9.332,
+                    "end": 9.472,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "bạc",
+                    "start": 9.492,
+                    "end": 9.552,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "xì",
+                    "start": 9.572,
+                    "end": 9.612,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "à,",
+                    "start": 9.632,
+                    "end": 10.693,
+                    "score": 0.018
+                  },
+                  {
+                    "word": "nhưng",
+                    "start": 10.773,
+                    "end": 11.154,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "không",
+                    "start": 11.194,
+                    "end": 11.514,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "có",
+                    "start": 11.614,
+                    "end": 11.654,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "sồn",
+                    "start": 11.674,
+                    "end": 11.754,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "mùi",
+                    "start": 11.774,
+                    "end": 11.874,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "Để",
+                    "start": 11.894,
+                    "end": 11.934,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "tôi",
+                    "start": 11.954,
+                    "end": 12.014,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "khảm",
+                    "start": 12.074,
+                    "end": 12.155,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "hồng",
+                    "start": 12.175,
+                    "end": 12.255,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "cho",
+                    "start": 12.535,
+                    "end": 12.595,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "anh",
+                    "start": 12.935,
+                    "end": 13.096,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "nhé",
+                    "start": 13.116,
+                    "end": 13.296,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "Hồng",
+                    "start": 13.316,
+                    "end": 13.476,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "hơi",
+                    "start": 13.496,
+                    "end": 13.556,
+                    "score": 0.008
+                  },
+                  {
+                    "word": "đỏ,",
+                    "start": 13.576,
+                    "end": 13.957,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "A",
+                    "start": 14.017,
+                    "end": 14.037,
+                    "score": 0.02
+                  },
+                  {
+                    "word": "mi",
+                    "start": 14.117,
+                    "end": 14.157,
+                    "score": 0.02
+                  },
+                  {
+                    "word": "là",
+                    "start": 14.237,
+                    "end": 14.277,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "anh",
+                    "start": 14.757,
+                    "end": 14.857,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "thích",
+                    "start": 14.958,
+                    "end": 15.058,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "sứng",
+                    "start": 15.078,
+                    "end": 15.158,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nhà",
+                    "start": 15.178,
+                    "end": 15.238,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "2",
+                    "start": 15.258,
+                    "end": 15.338,
+                    "score": 0.009
+                  },
+                  {
+                    "word": "bên",
+                    "start": 15.358,
+                    "end": 15.478,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "này",
+                    "start": 15.518,
+                    "end": 15.578,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "Nhật",
+                    "start": 15.598,
+                    "end": 15.678,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "đồ",
+                    "start": 15.698,
+                    "end": 15.738,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "đó",
+                    "start": 15.758,
+                    "end": 15.818,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "được",
+                    "start": 15.939,
+                    "end": 16.019,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "là",
+                    "start": 16.039,
+                    "end": 16.079,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "30",
+                    "start": 16.099,
+                    "end": 19.442,
+                    "score": 0.025
+                  },
+                  {
+                    "word": "bài",
+                    "start": 19.603,
+                    "end": 20.063,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "phải",
+                    "start": 20.083,
+                    "end": 20.203,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "tạm",
+                    "start": 20.223,
+                    "end": 20.423,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "đồ",
+                    "start": 20.443,
+                    "end": 20.483,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "Để",
+                    "start": 20.624,
+                    "end": 20.664,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "lên",
+                    "start": 20.684,
+                    "end": 20.824,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "tình",
+                    "start": 21.124,
+                    "end": 21.445,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "trạng",
+                    "start": 21.465,
+                    "end": 22.205,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "viếng",
+                    "start": 22.285,
+                    "end": 23.407,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "hồng",
+                    "start": 24.468,
+                    "end": 24.848,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "cấp",
+                    "start": 24.888,
+                    "end": 25.229,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "nhé",
+                    "start": 25.289,
+                    "end": 25.469,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "Tôi",
+                    "start": 25.489,
+                    "end": 25.729,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "kêu",
+                    "start": 25.749,
+                    "end": 25.889,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "cho",
+                    "start": 26.009,
+                    "end": 26.11,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "anh",
+                    "start": 26.89,
+                    "end": 27.931,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "một",
+                    "start": 27.972,
+                    "end": 28.452,
+                    "score": 0.012
+                  }
+                ],
+                "avg_logprob": -0.29933285643482765
+              },
+              {
+                "start": 29.022,
+                "end": 41.496,
+                "text": " cho anh thuộc Amisulin 500ml mùa ngay thì uộng 3 viên duy trí trong vòng bài ngay nên còn sốt trên 38,5 độ thì anh uộn thêm Prasitomon Dạ vâng em rõ rõ cảm ơn bác",
+                "words": [
+                  {
+                    "word": "cho",
+                    "start": 29.022,
+                    "end": 29.102,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "anh",
+                    "start": 29.122,
+                    "end": 29.223,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "thuộc",
+                    "start": 29.243,
+                    "end": 29.343,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "Amisulin",
+                    "start": 29.403,
+                    "end": 29.784,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "500ml",
+                    "start": 29.804,
+                    "end": 29.985,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "mùa",
+                    "start": 30.005,
+                    "end": 30.125,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "ngay",
+                    "start": 30.185,
+                    "end": 30.285,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "thì",
+                    "start": 30.306,
+                    "end": 30.386,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "uộng",
+                    "start": 30.406,
+                    "end": 30.486,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "3",
+                    "start": 30.506,
+                    "end": 30.526,
+                    "score": 0.007
+                  },
+                  {
+                    "word": "viên",
+                    "start": 30.546,
+                    "end": 30.626,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "duy",
+                    "start": 30.646,
+                    "end": 30.707,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "trí",
+                    "start": 30.727,
+                    "end": 30.787,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "trong",
+                    "start": 30.807,
+                    "end": 30.907,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "vòng",
+                    "start": 30.967,
+                    "end": 31.048,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "bài",
+                    "start": 31.088,
+                    "end": 31.148,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "ngay",
+                    "start": 31.168,
+                    "end": 31.248,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "nên",
+                    "start": 31.268,
+                    "end": 31.469,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "còn",
+                    "start": 31.489,
+                    "end": 31.549,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "sốt",
+                    "start": 31.569,
+                    "end": 31.629,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "trên",
+                    "start": 31.649,
+                    "end": 31.729,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "38,5",
+                    "start": 31.749,
+                    "end": 34.858,
+                    "score": 0.032
+                  },
+                  {
+                    "word": "độ",
+                    "start": 34.878,
+                    "end": 34.958,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "thì",
+                    "start": 35.099,
+                    "end": 35.299,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "anh",
+                    "start": 35.339,
+                    "end": 35.399,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "uộn",
+                    "start": 35.46,
+                    "end": 35.52,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "thêm",
+                    "start": 35.54,
+                    "end": 35.64,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "Prasitomon",
+                    "start": 35.78,
+                    "end": 36.402,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "Dạ",
+                    "start": 36.442,
+                    "end": 37.385,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "vâng",
+                    "start": 37.405,
+                    "end": 37.666,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "em",
+                    "start": 37.706,
+                    "end": 37.926,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "rõ",
+                    "start": 38.087,
+                    "end": 38.167,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "rõ",
+                    "start": 38.368,
+                    "end": 38.809,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "cảm",
+                    "start": 39.29,
+                    "end": 39.35,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "ơn",
+                    "start": 39.731,
+                    "end": 40.032,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "bác",
+                    "start": 40.253,
+                    "end": 41.496,
+                    "score": 0.015
+                  }
+                ],
+                "avg_logprob": -0.39014800093067226
+              }
+            ],
+            "wer": 0.859,
+            "medicalTermAccuracy": 0
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 11461,
+        "avgRtf": 0.12734444444444445,
+        "avgWer": 0.859,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 0
+      }
+    },
+    {
+      "engine": "whisperx",
+      "variant": "small",
+      "scenarioId": "scenario-002",
+      "scenarioName": "Đau dạ dày - Viêm loét dạ dày tá tràng - Nữ 42 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T11:44:00.504Z",
+          "metrics": {
+            "engine": "whisperx",
+            "variant": "small",
+            "transcribedText": " Chào chị, chị đau bùng vùng nào qua đáu từ bao giờ?Tối vì đau ấm mì ở vùng thường vị bạc à, cửa đỏ ấy, cùng đau mà ăn nó vào nào cũng bị tức.Đã bị hớm 1 tuần rồi.Chị có thể ở chua hay buồn nôn không?Trăm nhai gọi ai từng bị đáu dài dài tương tư như chị không?Có ở chua nhiều bạc sĩ ơi, mẹ tới được đây không bị viên luyện dài dài màng tỉnh.Chị có đáng giống thuận rằng đau hay thực phẩm chất năng như thương xuyên không?Tối hai uộng Tôi hãy uộn IboFriend vì khi thi thoảng hãy vì đau khợp gối.À, IboFriend có thể là nguyên nhân làm nặng thêm tinh tràng đáo dài dài đấy.Tôi nghĩ người chỉ bị viên rạch dài dài tả tràng.Cơn thêm tạch với khuôn hạt bế nữa.Trước mắt chỉ dùng OMAP Produce Hatch 20mg, ngồi sản trượt ăn 30 phút và tạm ngứng uộn thuộc vào đau kết nhé.",
+            "latencyMs": 18708,
+            "audioDurationMs": 18514,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "segments": [
+              {
+                "start": 0.858,
+                "end": 2.58,
+                "text": " Chào chị, chị đau bùng vùng nào qua đáu từ bao giờ?",
+                "words": [
+                  {
+                    "word": "Chào",
+                    "start": 0.858,
+                    "end": 0.938,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "chị,",
+                    "start": 0.958,
+                    "end": 1.078,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "chị",
+                    "start": 1.098,
+                    "end": 1.158,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "đau",
+                    "start": 1.198,
+                    "end": 1.258,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "bùng",
+                    "start": 1.278,
+                    "end": 1.379,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "vùng",
+                    "start": 1.399,
+                    "end": 1.479,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nào",
+                    "start": 1.499,
+                    "end": 1.559,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "qua",
+                    "start": 1.579,
+                    "end": 1.639,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "đáu",
+                    "start": 1.659,
+                    "end": 1.779,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "từ",
+                    "start": 1.859,
+                    "end": 1.899,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "bao",
+                    "start": 1.919,
+                    "end": 1.979,
+                    "score": 0.008
+                  },
+                  {
+                    "word": "giờ?",
+                    "start": 1.999,
+                    "end": 2.58,
+                    "score": 0.014
+                  }
+                ],
+                "avg_logprob": -0.28460706819544784
+              },
+              {
+                "start": 2.6,
+                "end": 5.783,
+                "text": "Tối vì đau ấm mì ở vùng thường vị bạc à, cửa đỏ ấy, cùng đau mà ăn nó vào nào cũng bị tức.",
+                "words": [
+                  {
+                    "word": "Tối",
+                    "start": 2.6,
+                    "end": 2.7,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "vì",
+                    "start": 2.74,
+                    "end": 2.8,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "đau",
+                    "start": 2.84,
+                    "end": 3.02,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "ấm",
+                    "start": 3.04,
+                    "end": 3.1,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "mì",
+                    "start": 3.121,
+                    "end": 3.161,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "ở",
+                    "start": 3.181,
+                    "end": 3.201,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "vùng",
+                    "start": 3.221,
+                    "end": 3.421,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "thường",
+                    "start": 3.461,
+                    "end": 3.581,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "vị",
+                    "start": 3.601,
+                    "end": 3.641,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "bạc",
+                    "start": 3.661,
+                    "end": 3.781,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "à,",
+                    "start": 3.801,
+                    "end": 3.901,
+                    "score": 0.017
+                  },
+                  {
+                    "word": "cửa",
+                    "start": 3.921,
+                    "end": 4.022,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "đỏ",
+                    "start": 4.042,
+                    "end": 4.082,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "ấy,",
+                    "start": 4.102,
+                    "end": 4.222,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "cùng",
+                    "start": 4.242,
+                    "end": 4.322,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "đau",
+                    "start": 4.342,
+                    "end": 4.402,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "mà",
+                    "start": 4.422,
+                    "end": 4.462,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "ăn",
+                    "start": 4.482,
+                    "end": 4.522,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "nó",
+                    "start": 4.542,
+                    "end": 4.582,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "vào",
+                    "start": 4.602,
+                    "end": 4.662,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nào",
+                    "start": 4.702,
+                    "end": 4.762,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "cũng",
+                    "start": 4.782,
+                    "end": 4.862,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "bị",
+                    "start": 4.882,
+                    "end": 4.923,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "tức.",
+                    "start": 4.943,
+                    "end": 5.783,
+                    "score": 0.015
+                  }
+                ],
+                "avg_logprob": -0.28460706819544784
+              },
+              {
+                "start": 5.803,
+                "end": 6.785,
+                "text": "Đã bị hớm 1 tuần rồi.",
+                "words": [
+                  {
+                    "word": "Đã",
+                    "start": 5.803,
+                    "end": 5.924,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "bị",
+                    "start": 5.944,
+                    "end": 5.984,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "hớm",
+                    "start": 6.004,
+                    "end": 6.064,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "1",
+                    "start": 6.084,
+                    "end": 6.184,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "tuần",
+                    "start": 6.404,
+                    "end": 6.484,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "rồi.",
+                    "start": 6.524,
+                    "end": 6.785,
+                    "score": 0.018
+                  }
+                ],
+                "avg_logprob": -0.28460706819544784
+              },
+              {
+                "start": 6.805,
+                "end": 8.026,
+                "text": "Chị có thể ở chua hay buồn nôn không?",
+                "words": [
+                  {
+                    "word": "Chị",
+                    "start": 6.805,
+                    "end": 6.865,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "có",
+                    "start": 7.005,
+                    "end": 7.125,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "thể",
+                    "start": 7.145,
+                    "end": 7.325,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "ở",
+                    "start": 7.345,
+                    "end": 7.365,
+                    "score": 0.017
+                  },
+                  {
+                    "word": "chua",
+                    "start": 7.385,
+                    "end": 7.465,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "hay",
+                    "start": 7.485,
+                    "end": 7.545,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "buồn",
+                    "start": 7.565,
+                    "end": 7.646,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nôn",
+                    "start": 7.666,
+                    "end": 7.726,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "không?",
+                    "start": 7.746,
+                    "end": 8.026,
+                    "score": 0.014
+                  }
+                ],
+                "avg_logprob": -0.28460706819544784
+              },
+              {
+                "start": 8.046,
+                "end": 11.45,
+                "text": "Trăm nhai gọi ai từng bị đáu dài dài tương tư như chị không?",
+                "words": [
+                  {
+                    "word": "Trăm",
+                    "start": 8.046,
+                    "end": 8.246,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "nhai",
+                    "start": 8.547,
+                    "end": 8.727,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "gọi",
+                    "start": 8.807,
+                    "end": 8.927,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "ai",
+                    "start": 8.947,
+                    "end": 9.047,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "từng",
+                    "start": 9.147,
+                    "end": 9.488,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "bị",
+                    "start": 9.508,
+                    "end": 9.548,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "đáu",
+                    "start": 9.568,
+                    "end": 9.968,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "dài",
+                    "start": 10.008,
+                    "end": 10.228,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "dài",
+                    "start": 10.268,
+                    "end": 10.789,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "tương",
+                    "start": 10.989,
+                    "end": 11.089,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "tư",
+                    "start": 11.109,
+                    "end": 11.149,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "như",
+                    "start": 11.169,
+                    "end": 11.23,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "chị",
+                    "start": 11.25,
+                    "end": 11.31,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "không?",
+                    "start": 11.33,
+                    "end": 11.45,
+                    "score": 0.015
+                  }
+                ],
+                "avg_logprob": -0.28460706819544784
+              },
+              {
+                "start": 11.47,
+                "end": 17.957,
+                "text": "Có ở chua nhiều bạc sĩ ơi, mẹ tới được đây không bị viên luyện dài dài màng tỉnh.",
+                "words": [
+                  {
+                    "word": "Có",
+                    "start": 11.47,
+                    "end": 11.51,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "ở",
+                    "start": 11.53,
+                    "end": 11.55,
+                    "score": 0.017
+                  },
+                  {
+                    "word": "chua",
+                    "start": 11.63,
+                    "end": 11.71,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "nhiều",
+                    "start": 11.73,
+                    "end": 11.83,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "bạc",
+                    "start": 11.93,
+                    "end": 12.03,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "sĩ",
+                    "start": 12.05,
+                    "end": 12.331,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "ơi,",
+                    "start": 12.411,
+                    "end": 12.631,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "mẹ",
+                    "start": 12.691,
+                    "end": 12.731,
+                    "score": 0.017
+                  },
+                  {
+                    "word": "tới",
+                    "start": 12.751,
+                    "end": 12.831,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "được",
+                    "start": 12.851,
+                    "end": 12.991,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "đây",
+                    "start": 13.011,
+                    "end": 13.092,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "không",
+                    "start": 13.112,
+                    "end": 13.212,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "bị",
+                    "start": 13.232,
+                    "end": 13.272,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "viên",
+                    "start": 13.292,
+                    "end": 13.372,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "luyện",
+                    "start": 13.412,
+                    "end": 13.512,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "dài",
+                    "start": 13.772,
+                    "end": 13.832,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "dài",
+                    "start": 14.013,
+                    "end": 14.113,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "màng",
+                    "start": 14.133,
+                    "end": 14.213,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "tỉnh.",
+                    "start": 14.233,
+                    "end": 17.957,
+                    "score": 0.012
+                  }
+                ],
+                "avg_logprob": -0.28460706819544784
+              },
+              {
+                "start": 17.977,
+                "end": 27.428,
+                "text": "Chị có đáng giống thuận rằng đau hay thực phẩm chất năng như thương xuyên không?",
+                "words": [
+                  {
+                    "word": "Chị",
+                    "start": 17.977,
+                    "end": 18.317,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "có",
+                    "start": 18.377,
+                    "end": 18.438,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "đáng",
+                    "start": 18.478,
+                    "end": 18.658,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "giống",
+                    "start": 18.678,
+                    "end": 18.778,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "thuận",
+                    "start": 18.798,
+                    "end": 18.898,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "rằng",
+                    "start": 19.359,
+                    "end": 19.659,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "đau",
+                    "start": 19.679,
+                    "end": 19.739,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "hay",
+                    "start": 19.759,
+                    "end": 20.119,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "thực",
+                    "start": 20.139,
+                    "end": 20.26,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "phẩm",
+                    "start": 20.28,
+                    "end": 20.74,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "chất",
+                    "start": 20.76,
+                    "end": 21.08,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "năng",
+                    "start": 21.461,
+                    "end": 21.601,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "như",
+                    "start": 21.761,
+                    "end": 22.162,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "thương",
+                    "start": 22.182,
+                    "end": 22.462,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "xuyên",
+                    "start": 22.502,
+                    "end": 22.842,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "không?",
+                    "start": 22.862,
+                    "end": 27.428,
+                    "score": 0.014
+                  }
+                ],
+                "avg_logprob": -0.28460706819544784
+              },
+              {
+                "start": 27.448,
+                "end": 28.789,
+                "text": "Tối hai uộng",
+                "words": [
+                  {
+                    "word": "Tối",
+                    "start": 27.448,
+                    "end": 27.508,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "hai",
+                    "start": 28.128,
+                    "end": 28.188,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "uộng",
+                    "start": 28.248,
+                    "end": 28.789,
+                    "score": 0.012
+                  }
+                ],
+                "avg_logprob": -0.28460706819544784
+              },
+              {
+                "start": 31.165,
+                "end": 32.767,
+                "text": " Tôi hãy uộn IboFriend vì khi thi thoảng hãy vì đau khợp gối.",
+                "words": [
+                  {
+                    "word": "Tôi",
+                    "start": 31.165,
+                    "end": 31.225,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "hãy",
+                    "start": 31.265,
+                    "end": 31.325,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "uộn",
+                    "start": 31.345,
+                    "end": 31.405,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "IboFriend",
+                    "start": 31.425,
+                    "end": 31.746,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "vì",
+                    "start": 31.766,
+                    "end": 31.986,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "khi",
+                    "start": 32.026,
+                    "end": 32.086,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "thi",
+                    "start": 32.106,
+                    "end": 32.186,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "thoảng",
+                    "start": 32.206,
+                    "end": 32.346,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "hãy",
+                    "start": 32.366,
+                    "end": 32.426,
+                    "score": 0.018
+                  },
+                  {
+                    "word": "vì",
+                    "start": 32.446,
+                    "end": 32.486,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "đau",
+                    "start": 32.507,
+                    "end": 32.567,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "khợp",
+                    "start": 32.587,
+                    "end": 32.667,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "gối.",
+                    "start": 32.687,
+                    "end": 32.767,
+                    "score": 0.012
+                  }
+                ],
+                "avg_logprob": -0.4068399321102927
+              },
+              {
+                "start": 32.787,
+                "end": 38.954,
+                "text": "À, IboFriend có thể là nguyên nhân làm nặng thêm tinh tràng đáo dài dài đấy.",
+                "words": [
+                  {
+                    "word": "À,",
+                    "start": 32.787,
+                    "end": 33.628,
+                    "score": 0.017
+                  },
+                  {
+                    "word": "IboFriend",
+                    "start": 33.748,
+                    "end": 35.33,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "có",
+                    "start": 35.35,
+                    "end": 35.47,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "thể",
+                    "start": 35.51,
+                    "end": 35.57,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "là",
+                    "start": 35.69,
+                    "end": 35.73,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "nguyên",
+                    "start": 35.75,
+                    "end": 35.95,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "nhân",
+                    "start": 35.97,
+                    "end": 36.131,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "làm",
+                    "start": 36.251,
+                    "end": 36.491,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "nặng",
+                    "start": 36.511,
+                    "end": 37.012,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "thêm",
+                    "start": 37.032,
+                    "end": 37.632,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "tinh",
+                    "start": 37.652,
+                    "end": 37.773,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "tràng",
+                    "start": 37.793,
+                    "end": 38.073,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "đáo",
+                    "start": 38.113,
+                    "end": 38.173,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "dài",
+                    "start": 38.273,
+                    "end": 38.333,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "dài",
+                    "start": 38.353,
+                    "end": 38.413,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "đấy.",
+                    "start": 38.433,
+                    "end": 38.954,
+                    "score": 0.013
+                  }
+                ],
+                "avg_logprob": -0.4068399321102927
+              },
+              {
+                "start": 38.974,
+                "end": 41.597,
+                "text": "Tôi nghĩ người chỉ bị viên rạch dài dài tả tràng.",
+                "words": [
+                  {
+                    "word": "Tôi",
+                    "start": 38.974,
+                    "end": 39.034,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "nghĩ",
+                    "start": 39.094,
+                    "end": 39.274,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "người",
+                    "start": 39.314,
+                    "end": 39.514,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "chỉ",
+                    "start": 39.695,
+                    "end": 39.775,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "bị",
+                    "start": 39.815,
+                    "end": 39.855,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "viên",
+                    "start": 39.875,
+                    "end": 39.955,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "rạch",
+                    "start": 39.975,
+                    "end": 40.115,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "dài",
+                    "start": 40.215,
+                    "end": 40.415,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "dài",
+                    "start": 40.436,
+                    "end": 40.996,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "tả",
+                    "start": 41.016,
+                    "end": 41.176,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "tràng.",
+                    "start": 41.196,
+                    "end": 41.597,
+                    "score": 0.011
+                  }
+                ],
+                "avg_logprob": -0.4068399321102927
+              },
+              {
+                "start": 41.617,
+                "end": 43.199,
+                "text": "Cơn thêm tạch với khuôn hạt bế nữa.",
+                "words": [
+                  {
+                    "word": "Cơn",
+                    "start": 41.617,
+                    "end": 41.677,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "thêm",
+                    "start": 41.697,
+                    "end": 41.837,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "tạch",
+                    "start": 41.877,
+                    "end": 41.957,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "với",
+                    "start": 41.997,
+                    "end": 42.057,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "khuôn",
+                    "start": 42.077,
+                    "end": 42.298,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "hạt",
+                    "start": 42.318,
+                    "end": 42.398,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "bế",
+                    "start": 42.418,
+                    "end": 42.458,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "nữa.",
+                    "start": 42.478,
+                    "end": 43.199,
+                    "score": 0.013
+                  }
+                ],
+                "avg_logprob": -0.4068399321102927
+              },
+              {
+                "start": 43.219,
+                "end": 56.734,
+                "text": "Trước mắt chỉ dùng OMAP Produce Hatch 20mg, ngồi sản trượt ăn 30 phút và tạm ngứng uộn thuộc vào đau kết nhé.",
+                "words": [
+                  {
+                    "word": "Trước",
+                    "start": 43.219,
+                    "end": 43.379,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "mắt",
+                    "start": 43.399,
+                    "end": 44.1,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "chỉ",
+                    "start": 44.12,
+                    "end": 44.36,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "dùng",
+                    "start": 44.52,
+                    "end": 44.6,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "OMAP",
+                    "start": 44.76,
+                    "end": 45.261,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "Produce",
+                    "start": 45.281,
+                    "end": 45.561,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "Hatch",
+                    "start": 45.581,
+                    "end": 46.042,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "20mg,",
+                    "start": 46.062,
+                    "end": 49.886,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "ngồi",
+                    "start": 49.906,
+                    "end": 50.086,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "sản",
+                    "start": 50.106,
+                    "end": 50.167,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "trượt",
+                    "start": 50.187,
+                    "end": 50.367,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "ăn",
+                    "start": 50.387,
+                    "end": 50.427,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "30",
+                    "start": 50.447,
+                    "end": 52.649,
+                    "score": 0.017
+                  },
+                  {
+                    "word": "phút",
+                    "start": 52.669,
+                    "end": 52.89,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "và",
+                    "start": 52.91,
+                    "end": 53.03,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "tạm",
+                    "start": 53.05,
+                    "end": 53.45,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "ngứng",
+                    "start": 53.671,
+                    "end": 53.791,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "uộn",
+                    "start": 53.951,
+                    "end": 54.091,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "thuộc",
+                    "start": 54.431,
+                    "end": 54.592,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "vào",
+                    "start": 54.612,
+                    "end": 55.232,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "đau",
+                    "start": 55.292,
+                    "end": 55.553,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "kết",
+                    "start": 55.613,
+                    "end": 55.873,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nhé.",
+                    "start": 55.893,
+                    "end": 56.734,
+                    "score": 0.015
+                  }
+                ],
+                "avg_logprob": -0.4068399321102927
+              }
+            ],
+            "wer": 0.9185,
+            "medicalTermAccuracy": 0
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 18708,
+        "avgRtf": 0.10393333333333334,
+        "avgWer": 0.9185,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 0
+      }
+    },
+    {
+      "engine": "whisperx",
+      "variant": "small",
+      "scenarioId": "scenario-003",
+      "scenarioName": "Tăng huyết áp + Đái tháo đường type 2 + Rối loạn lipid máu - Nam 58 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T11:44:23.051Z",
+          "metrics": {
+            "engine": "whisperx",
+            "variant": "small",
+            "transcribedText": " Chào bác, hôm nay bác đi tại khạm đến kỳ đồng khu mà, bác thầy trong người thế nào?Chào bác sĩ, tớ thầy giao nay hơi chọng mặt vào buổi sáng, chứng thay thi cử tế bi như kim chấm ấy, để chào kiểm tra hiệp áp.Chị sổ hôm nay khả cáo từng 165 trên 100mm thuyền ân, kỳ quả sạch nghiệp màu cho thầy đương việc đòi là 180mg trên DL Chị số HP A1C lên tới 9,02% Như vậy là tên trang huyệt áp Tăng huyệt áp và đại thảo đường loài 2 của bạc đang chưa được kiếm soạc tốt Cái tế bi chân tay có thể là biển chân thân kênh ngoài biên do tiểu đường Chỏ xẻ điều chân đơn thuốc thêm ạ I'm Law Define 50mg vào buổi sáng để hạ áp và tăng leo metformin lên 1.000mg mỗi ngày Bà cân tuyệt đội 2 trẻ tên bồ, phải đi bồ nhạc nhạc nhé.Sao như thuộc thế này bác?Tụi con đang cuộn cả thuộc mờ màu nữa.Bà khởi yên tâm, tạo đà cân đội để tránh tướng tạc thuộc rồi.Bà cân tuấn thụ đồng liều nay nhé.",
+            "latencyMs": 22541,
+            "audioDurationMs": 22315,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "segments": [
+              {
+                "start": 0.031,
+                "end": 2.335,
+                "text": " Chào bác, hôm nay bác đi tại khạm đến kỳ đồng khu mà, bác thầy trong người thế nào?",
+                "words": [
+                  {
+                    "word": "Chào",
+                    "start": 0.031,
+                    "end": 0.111,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "bác,",
+                    "start": 0.131,
+                    "end": 0.211,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "hôm",
+                    "start": 0.231,
+                    "end": 0.291,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "nay",
+                    "start": 0.311,
+                    "end": 0.392,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "bác",
+                    "start": 0.412,
+                    "end": 0.592,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "đi",
+                    "start": 0.612,
+                    "end": 0.652,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "tại",
+                    "start": 0.672,
+                    "end": 0.752,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "khạm",
+                    "start": 0.772,
+                    "end": 0.852,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "đến",
+                    "start": 0.872,
+                    "end": 0.932,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "kỳ",
+                    "start": 0.952,
+                    "end": 0.992,
+                    "score": 0.018
+                  },
+                  {
+                    "word": "đồng",
+                    "start": 1.013,
+                    "end": 1.153,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "khu",
+                    "start": 1.173,
+                    "end": 1.233,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "mà,",
+                    "start": 1.253,
+                    "end": 1.393,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "bác",
+                    "start": 1.413,
+                    "end": 1.633,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "thầy",
+                    "start": 1.674,
+                    "end": 1.854,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "trong",
+                    "start": 1.874,
+                    "end": 1.974,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "người",
+                    "start": 1.994,
+                    "end": 2.134,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "thế",
+                    "start": 2.154,
+                    "end": 2.234,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nào?",
+                    "start": 2.254,
+                    "end": 2.335,
+                    "score": 0.014
+                  }
+                ],
+                "avg_logprob": -0.3857665621001145
+              },
+              {
+                "start": 2.355,
+                "end": 6.721,
+                "text": "Chào bác sĩ, tớ thầy giao nay hơi chọng mặt vào buổi sáng, chứng thay thi cử tế bi như kim chấm ấy, để chào kiểm tra hiệp áp.",
+                "words": [
+                  {
+                    "word": "Chào",
+                    "start": 2.355,
+                    "end": 2.435,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "bác",
+                    "start": 2.455,
+                    "end": 2.515,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "sĩ,",
+                    "start": 2.535,
+                    "end": 3.116,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "tớ",
+                    "start": 3.136,
+                    "end": 3.176,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "thầy",
+                    "start": 3.196,
+                    "end": 3.336,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "giao",
+                    "start": 3.356,
+                    "end": 3.436,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nay",
+                    "start": 3.456,
+                    "end": 3.516,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "hơi",
+                    "start": 3.536,
+                    "end": 3.597,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "chọng",
+                    "start": 3.617,
+                    "end": 3.717,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "mặt",
+                    "start": 3.757,
+                    "end": 3.817,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "vào",
+                    "start": 3.837,
+                    "end": 3.937,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "buổi",
+                    "start": 3.957,
+                    "end": 4.037,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "sáng,",
+                    "start": 4.057,
+                    "end": 4.378,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "chứng",
+                    "start": 4.398,
+                    "end": 4.498,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "thay",
+                    "start": 4.518,
+                    "end": 4.638,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "thi",
+                    "start": 4.658,
+                    "end": 4.758,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "cử",
+                    "start": 4.778,
+                    "end": 4.818,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "tế",
+                    "start": 4.838,
+                    "end": 4.878,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "bi",
+                    "start": 4.899,
+                    "end": 4.939,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "như",
+                    "start": 4.959,
+                    "end": 5.019,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "kim",
+                    "start": 5.039,
+                    "end": 5.099,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "chấm",
+                    "start": 5.119,
+                    "end": 5.199,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "ấy,",
+                    "start": 5.219,
+                    "end": 5.399,
+                    "score": 0.019
+                  },
+                  {
+                    "word": "để",
+                    "start": 5.419,
+                    "end": 5.459,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "chào",
+                    "start": 5.479,
+                    "end": 5.56,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "kiểm",
+                    "start": 5.58,
+                    "end": 5.66,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "tra",
+                    "start": 5.68,
+                    "end": 5.74,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "hiệp",
+                    "start": 5.76,
+                    "end": 5.86,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "áp.",
+                    "start": 5.88,
+                    "end": 6.721,
+                    "score": 0.015
+                  }
+                ],
+                "avg_logprob": -0.3857665621001145
+              },
+              {
+                "start": 6.741,
+                "end": 25.33,
+                "text": "Chị sổ hôm nay khả cáo từng 165 trên 100mm thuyền ân, kỳ quả sạch nghiệp màu cho thầy đương việc đòi là 180mg trên",
+                "words": [
+                  {
+                    "word": "Chị",
+                    "start": 6.741,
+                    "end": 6.821,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "sổ",
+                    "start": 6.842,
+                    "end": 6.882,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "hôm",
+                    "start": 6.902,
+                    "end": 6.982,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nay",
+                    "start": 7.002,
+                    "end": 7.062,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "khả",
+                    "start": 7.082,
+                    "end": 7.242,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "cáo",
+                    "start": 7.262,
+                    "end": 7.382,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "từng",
+                    "start": 7.402,
+                    "end": 7.482,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "165",
+                    "start": 7.503,
+                    "end": 9.385,
+                    "score": 0.018
+                  },
+                  {
+                    "word": "trên",
+                    "start": 9.405,
+                    "end": 9.586,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "100mm",
+                    "start": 9.606,
+                    "end": 15.855,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "thuyền",
+                    "start": 15.875,
+                    "end": 16.056,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "ân,",
+                    "start": 16.076,
+                    "end": 20.463,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "kỳ",
+                    "start": 20.483,
+                    "end": 20.783,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "quả",
+                    "start": 20.803,
+                    "end": 20.883,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "sạch",
+                    "start": 20.943,
+                    "end": 21.244,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nghiệp",
+                    "start": 21.264,
+                    "end": 21.684,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "màu",
+                    "start": 21.744,
+                    "end": 22.125,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "cho",
+                    "start": 22.145,
+                    "end": 22.245,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "thầy",
+                    "start": 22.385,
+                    "end": 22.646,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "đương",
+                    "start": 22.746,
+                    "end": 22.926,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "việc",
+                    "start": 23.367,
+                    "end": 23.667,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "đòi",
+                    "start": 23.687,
+                    "end": 23.748,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "là",
+                    "start": 23.768,
+                    "end": 23.848,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "180mg",
+                    "start": 23.868,
+                    "end": 24.168,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "trên",
+                    "start": 24.208,
+                    "end": 25.33,
+                    "score": 0.014
+                  }
+                ],
+                "avg_logprob": -0.3857665621001145
+              },
+              {
+                "start": 25.394,
+                "end": 53.46,
+                "text": " DL Chị số HP A1C lên tới 9,02% Như vậy là tên trang huyệt áp Tăng huyệt áp và đại thảo đường loài 2 của bạc đang chưa được kiếm soạc tốt Cái tế bi chân tay có thể là biển chân thân kênh ngoài biên do tiểu đường Chỏ xẻ điều chân đơn thuốc thêm ạ I'm Law Define 50mg vào buổi sáng để hạ áp và tăng leo metformin lên 1.000mg mỗi ngày",
+                "words": [
+                  {
+                    "word": "DL",
+                    "start": 25.394,
+                    "end": 25.434,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "Chị",
+                    "start": 25.674,
+                    "end": 25.774,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "số",
+                    "start": 25.794,
+                    "end": 25.834,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "HP",
+                    "start": 25.854,
+                    "end": 25.955,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "A1C",
+                    "start": 26.195,
+                    "end": 26.255,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "lên",
+                    "start": 26.275,
+                    "end": 26.335,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "tới",
+                    "start": 26.355,
+                    "end": 26.855,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "9,02%",
+                    "start": 26.875,
+                    "end": 27.336,
+                    "score": 0.019
+                  },
+                  {
+                    "word": "Như",
+                    "start": 27.356,
+                    "end": 27.436,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "vậy",
+                    "start": 27.756,
+                    "end": 27.816,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "là",
+                    "start": 27.836,
+                    "end": 27.876,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "tên",
+                    "start": 27.976,
+                    "end": 28.137,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "trang",
+                    "start": 28.157,
+                    "end": 28.277,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "huyệt",
+                    "start": 28.297,
+                    "end": 28.677,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "áp",
+                    "start": 28.697,
+                    "end": 28.937,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "Tăng",
+                    "start": 29.017,
+                    "end": 29.157,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "huyệt",
+                    "start": 29.178,
+                    "end": 29.338,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "áp",
+                    "start": 29.398,
+                    "end": 29.438,
+                    "score": 0.018
+                  },
+                  {
+                    "word": "và",
+                    "start": 29.458,
+                    "end": 29.498,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "đại",
+                    "start": 29.518,
+                    "end": 29.598,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "thảo",
+                    "start": 29.798,
+                    "end": 29.958,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "đường",
+                    "start": 30.218,
+                    "end": 30.479,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "loài",
+                    "start": 30.499,
+                    "end": 30.579,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "2",
+                    "start": 30.599,
+                    "end": 30.619,
+                    "score": 0.02
+                  },
+                  {
+                    "word": "của",
+                    "start": 30.679,
+                    "end": 30.819,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "bạc",
+                    "start": 30.839,
+                    "end": 30.979,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "đang",
+                    "start": 30.999,
+                    "end": 31.139,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "chưa",
+                    "start": 31.179,
+                    "end": 31.44,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "được",
+                    "start": 31.62,
+                    "end": 31.7,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "kiếm",
+                    "start": 31.72,
+                    "end": 31.94,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "soạc",
+                    "start": 31.96,
+                    "end": 32.1,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "tốt",
+                    "start": 32.24,
+                    "end": 32.32,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "Cái",
+                    "start": 32.421,
+                    "end": 32.561,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "tế",
+                    "start": 32.581,
+                    "end": 32.821,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "bi",
+                    "start": 32.841,
+                    "end": 32.921,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "chân",
+                    "start": 32.941,
+                    "end": 33.341,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "tay",
+                    "start": 33.421,
+                    "end": 33.642,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "có",
+                    "start": 33.662,
+                    "end": 33.702,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "thể",
+                    "start": 33.722,
+                    "end": 34.042,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "là",
+                    "start": 34.222,
+                    "end": 34.262,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "biển",
+                    "start": 34.282,
+                    "end": 34.482,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "chân",
+                    "start": 34.502,
+                    "end": 34.583,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "thân",
+                    "start": 34.683,
+                    "end": 34.963,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "kênh",
+                    "start": 34.983,
+                    "end": 35.483,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "ngoài",
+                    "start": 35.503,
+                    "end": 35.964,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "biên",
+                    "start": 36.024,
+                    "end": 36.144,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "do",
+                    "start": 36.164,
+                    "end": 36.845,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "tiểu",
+                    "start": 36.865,
+                    "end": 37.585,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "đường",
+                    "start": 37.625,
+                    "end": 37.725,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "Chỏ",
+                    "start": 37.745,
+                    "end": 37.806,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "xẻ",
+                    "start": 37.846,
+                    "end": 37.926,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "điều",
+                    "start": 37.986,
+                    "end": 38.826,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "chân",
+                    "start": 38.846,
+                    "end": 38.947,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "đơn",
+                    "start": 38.967,
+                    "end": 39.027,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "thuốc",
+                    "start": 39.047,
+                    "end": 39.327,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "thêm",
+                    "start": 39.347,
+                    "end": 39.607,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "ạ",
+                    "start": 39.627,
+                    "end": 39.707,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "I'm",
+                    "start": 39.727,
+                    "end": 43.09,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "Law",
+                    "start": 43.11,
+                    "end": 43.491,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "Define",
+                    "start": 43.531,
+                    "end": 43.951,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "50mg",
+                    "start": 43.971,
+                    "end": 48.155,
+                    "score": 0.015
+                  },
+                  {
+                    "word": "vào",
+                    "start": 48.295,
+                    "end": 48.515,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "buổi",
+                    "start": 48.535,
+                    "end": 48.876,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "sáng",
+                    "start": 48.916,
+                    "end": 49.516,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "để",
+                    "start": 49.576,
+                    "end": 50.237,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "hạ",
+                    "start": 50.257,
+                    "end": 50.617,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "áp",
+                    "start": 50.838,
+                    "end": 51.078,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "và",
+                    "start": 51.198,
+                    "end": 51.258,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "tăng",
+                    "start": 51.578,
+                    "end": 52.019,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "leo",
+                    "start": 52.139,
+                    "end": 52.199,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "metformin",
+                    "start": 52.379,
+                    "end": 52.759,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "lên",
+                    "start": 52.779,
+                    "end": 52.839,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "1.000mg",
+                    "start": 52.859,
+                    "end": 53.16,
+                    "score": 0.021
+                  },
+                  {
+                    "word": "mỗi",
+                    "start": 53.18,
+                    "end": 53.24,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "ngày",
+                    "start": 53.28,
+                    "end": 53.46,
+                    "score": 0.011
+                  }
+                ],
+                "avg_logprob": -0.4105591629232679
+              },
+              {
+                "start": 54.149,
+                "end": 55.493,
+                "text": " Bà cân tuyệt đội 2 trẻ tên bồ, phải đi bồ nhạc nhạc nhé.",
+                "words": [
+                  {
+                    "word": "Bà",
+                    "start": 54.149,
+                    "end": 54.189,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "cân",
+                    "start": 54.209,
+                    "end": 54.269,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "tuyệt",
+                    "start": 54.289,
+                    "end": 54.39,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "đội",
+                    "start": 54.41,
+                    "end": 54.47,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "2",
+                    "start": 54.49,
+                    "end": 54.51,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "trẻ",
+                    "start": 54.53,
+                    "end": 54.59,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "tên",
+                    "start": 54.61,
+                    "end": 54.67,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "bồ,",
+                    "start": 54.691,
+                    "end": 54.771,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "phải",
+                    "start": 54.791,
+                    "end": 54.931,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "đi",
+                    "start": 54.951,
+                    "end": 54.991,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "bồ",
+                    "start": 55.011,
+                    "end": 55.092,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nhạc",
+                    "start": 55.112,
+                    "end": 55.192,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nhạc",
+                    "start": 55.212,
+                    "end": 55.292,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nhé.",
+                    "start": 55.312,
+                    "end": 55.493,
+                    "score": 0.016
+                  }
+                ],
+                "avg_logprob": -0.365469791775658
+              },
+              {
+                "start": 55.513,
+                "end": 56.074,
+                "text": "Sao như thuộc thế này bác?",
+                "words": [
+                  {
+                    "word": "Sao",
+                    "start": 55.513,
+                    "end": 55.613,
+                    "score": 0.009
+                  },
+                  {
+                    "word": "như",
+                    "start": 55.633,
+                    "end": 55.693,
+                    "score": 0.009
+                  },
+                  {
+                    "word": "thuộc",
+                    "start": 55.713,
+                    "end": 55.814,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "thế",
+                    "start": 55.834,
+                    "end": 55.894,
+                    "score": 0.009
+                  },
+                  {
+                    "word": "này",
+                    "start": 55.914,
+                    "end": 55.974,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "bác?",
+                    "start": 55.994,
+                    "end": 56.074,
+                    "score": 0.018
+                  }
+                ],
+                "avg_logprob": -0.365469791775658
+              },
+              {
+                "start": 56.094,
+                "end": 57.679,
+                "text": "Tụi con đang cuộn cả thuộc mờ màu nữa.",
+                "words": [
+                  {
+                    "word": "Tụi",
+                    "start": 56.094,
+                    "end": 56.155,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "con",
+                    "start": 56.175,
+                    "end": 56.235,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "đang",
+                    "start": 56.295,
+                    "end": 56.496,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "cuộn",
+                    "start": 56.576,
+                    "end": 56.676,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "cả",
+                    "start": 56.716,
+                    "end": 56.756,
+                    "score": 0.016
+                  },
+                  {
+                    "word": "thuộc",
+                    "start": 56.776,
+                    "end": 56.897,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "mờ",
+                    "start": 56.917,
+                    "end": 56.977,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "màu",
+                    "start": 56.997,
+                    "end": 57.077,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "nữa.",
+                    "start": 57.097,
+                    "end": 57.679,
+                    "score": 0.016
+                  }
+                ],
+                "avg_logprob": -0.365469791775658
+              },
+              {
+                "start": 57.699,
+                "end": 66.784,
+                "text": "Bà khởi yên tâm, tạo đà cân đội để tránh tướng tạc thuộc rồi.",
+                "words": [
+                  {
+                    "word": "Bà",
+                    "start": 57.699,
+                    "end": 57.739,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "khởi",
+                    "start": 57.759,
+                    "end": 57.839,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "yên",
+                    "start": 57.859,
+                    "end": 57.92,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "tâm,",
+                    "start": 57.94,
+                    "end": 63.154,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "tạo",
+                    "start": 63.234,
+                    "end": 63.295,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "đà",
+                    "start": 63.315,
+                    "end": 64.117,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "cân",
+                    "start": 64.177,
+                    "end": 64.257,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "đội",
+                    "start": 64.318,
+                    "end": 64.418,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "để",
+                    "start": 64.478,
+                    "end": 64.638,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "tránh",
+                    "start": 64.679,
+                    "end": 64.879,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "tướng",
+                    "start": 64.899,
+                    "end": 65.441,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "tạc",
+                    "start": 65.661,
+                    "end": 66.103,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "thuộc",
+                    "start": 66.123,
+                    "end": 66.544,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "rồi.",
+                    "start": 66.564,
+                    "end": 66.784,
+                    "score": 0.016
+                  }
+                ],
+                "avg_logprob": -0.365469791775658
+              },
+              {
+                "start": 66.845,
+                "end": 69.492,
+                "text": "Bà cân tuấn thụ đồng liều nay nhé.",
+                "words": [
+                  {
+                    "word": "Bà",
+                    "start": 66.845,
+                    "end": 66.885,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "cân",
+                    "start": 66.905,
+                    "end": 67.025,
+                    "score": 0.011
+                  },
+                  {
+                    "word": "tuấn",
+                    "start": 67.045,
+                    "end": 67.186,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "thụ",
+                    "start": 67.506,
+                    "end": 67.607,
+                    "score": 0.013
+                  },
+                  {
+                    "word": "đồng",
+                    "start": 67.627,
+                    "end": 67.767,
+                    "score": 0.01
+                  },
+                  {
+                    "word": "liều",
+                    "start": 67.787,
+                    "end": 67.968,
+                    "score": 0.014
+                  },
+                  {
+                    "word": "nay",
+                    "start": 68.008,
+                    "end": 68.389,
+                    "score": 0.012
+                  },
+                  {
+                    "word": "nhé.",
+                    "start": 68.61,
+                    "end": 69.492,
+                    "score": 0.014
+                  }
+                ],
+                "avg_logprob": -0.365469791775658
+              }
+            ],
+            "wer": 0.9546,
+            "medicalTermAccuracy": 5
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 22541,
+        "avgRtf": 0.07513666666666667,
+        "avgWer": 0.9546,
+        "avgMedicalTermAccuracy": 5,
+        "errorRate": 0
+      }
+    }
+  ]
+}

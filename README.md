@@ -1,68 +1,27 @@
-# Medical Examination Assistant (MEA) - BE (NestJS)
+# 🚀 MEA AI Benchmarking Kit
 
+Bộ công cụ đánh giá hiệu năng và chất lượng cho các mô hình AI (STT, LLM) dành riêng cho dự án **Medical Examination Assistant (MEA)**.
 
-```
-Bước 1: Khởi tạo phiên khám
-  └─ GET /api/v1/emr/current-session (HIS)
-  └─ Trả về: visitId, patient info, history
+## 🎯 Mục đích dự án
+Repo này được tách ra để tập trung vào việc:
+1.  **Cấu hình & Triển khai Local**: Thiết lập các server STT (WhisperX, Parakeet, Moonshine) và LLM tại môi trường local.
+2.  **Đánh giá định lượng (Benchmarking)**: Chạy các kịch bản audio y tế thực tế để đo lường WER, RTF, Latency và độ chính xác thuật ngữ y khoa.
+3.  **Tối ưu hóa pipeline**: Thử nghiệm các kỹ thuật tiền xử lý audio, prompt engineering và fine-turning trước khi đưa vào hệ thống MEA chính thức.
 
-Bước 2: Ghi âm & Xử lý
-  └─ Stream Audio → STT (Giọng nói → Văn bản)
-  └─ NLP Processing (Triệu chứng, Thuốc...)
+## 📁 Cấu trúc dự án
+- `engines/`: Chứa mã nguồn các STT server (FastAPI) và các model tải về.
+- `benchmarks/`: Công cụ chạy benchmark tự động bằng TypeScript.
+- `data/`: Dữ liệu audio mẫu (`test-data`) và kết quả đo lường (`results`).
+- `scripts/`: Các script Python hỗ trợ xử lý dữ liệu và tổng hợp báo cáo.
+- `docs/`: Chứa các báo cáo benchmark chi tiết (Markdown) và biểu đồ phân tích.
 
-Bước 3: Auto-fill Form
-  └─ Trigger Final Analysis
-  └─ POST /api/v1/emr/update/{visitId}
-  └─ Payload: Chẩn đoán, Triệu chứng, Sinh hiệu
+## 🛠️ Trạng thái hiện tại
+- ✅ Đã triển khai và benchmark 4 kỹ thuật STT: **WhisperX**, **Moonshine**, **Parakeet**, **WhisperLiveKit**.
+- ⏳ Kế hoạch tiếp theo: Triển khai benchmark cho các mô hình LLM (Summarization, ICD-10 Extraction).
 
-Bước 4: Review & Final Save
-  └─ Hiển thị dữ liệu màn hình (Draft)
-  └─ Bác sĩ chỉnh sửa
-  └─ Lưu bệnh án (Final Save) → HIS
-```
+## 🏃‍♂️ Bắt đầu nhanh
+Để biết chi tiết cách cài đặt môi trường và vận hành công cụ benchmark, vui lòng xem tài liệu:
+👉 **[BENCHMARK.md](./BENCHMARK.md)**
 
-### Flow hiện tại (đã implement)
-
-```
-┌─────────────────────────────────────────────────────────┐
-│ DASHBOARD - Entry Point                                 │
-│ ┌─────────────┐  ┌──────────────┐                      │
-│ │ Bệnh nhân   │  │ Tìm kiếm     │                      │
-│ │ mới         │  │ bệnh nhân    │                      │
-│ └─────────────┘  └──────────────┘                      │
-│                                                          │
-│ Stats: Today | Week | Month | Total                     │
-│ Recent Sessions Table                                   │
-└─────────────────────────────────────────────────────────┘
-                    ↓
-┌─────────────────────────────────────────────────────────┐
-│ EXAMINATION PAGE - Progressive Vertical Layout          │
-│                                                          │
-│ ┌─ Step 1: Ghi âm hội thoại ─────────────────────┐     │
-│ │ 🎙️ Bắt đầu ghi âm                               │     │
-│ │ Status: ⏳ Pending → 🔄 Active → ✅ Completed    │     │
-│ └──────────────────────────────────────────────────┘     │
-│                    ↓                                     │
-│ ┌─ Step 2: Speech-to-Text ────────────────────────┐     │
-│ │ • Whisper STT (Groq)                             │     │
-│ │ • Role Detection (Bác sĩ/Bệnh nhân)             │     │
-│ │ • Medical Text Fixer                             │     │
-│ │ • Display: Structured Transcripts                │     │
-│ └──────────────────────────────────────────────────┘     │
-│                    ↓                                     │
-│ ┌─ Step 3: AI Analysis & Review ──────────────────┐     │
-│ │ • 3 AI Agents (Scribe, ICD-10, Medical Expert)  │     │
-│ │ • SOAP Notes generation                          │     │
-│ │ • ICD-10 codes suggestion                        │     │
-│ │ • RAG-based medical advice                       │     │
-│ │ • Doctor Review Form (editable)                  │     │
-│ └──────────────────────────────────────────────────┘     │
-│                    ↓                                     │
-│ ┌─ Step 4: AI vs Doctor Comparison ───────────────┐     │
-│ │ • Semantic similarity scoring                    │     │
-│ │ • ICD code matching                              │     │
-│ │ • Overall match score (0-100%)                   │     │
-│ │ • Save to database for analytics                 │     │
-│ └──────────────────────────────────────────────────┘     │
-└─────────────────────────────────────────────────────────┘
-```
+---
+*Dự án thuộc hệ sinh thái Senlyzer AI.*

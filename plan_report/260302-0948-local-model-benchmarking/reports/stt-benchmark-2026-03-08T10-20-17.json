@@ -1,0 +1,100 @@
+{
+  "id": "stt-benchmark-1772965217053",
+  "type": "stt",
+  "createdAt": "2026-03-08T10:20:17.053Z",
+  "hardware": {
+    "cpu": "i7-11800H @ 2.30GHz",
+    "ram": "16GB",
+    "gpu": "RTX 3050 Ti",
+    "vram": "4GB"
+  },
+  "results": [
+    {
+      "engine": "whisperx",
+      "variant": "small",
+      "scenarioId": "scenario-001",
+      "scenarioName": "Viêm họng cấp - Nam 35 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T10:20:16.810Z",
+          "metrics": {
+            "engine": "whisperx",
+            "variant": "small",
+            "transcribedText": "",
+            "latencyMs": 213,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "error": "Server returned 500: {\"detail\":\"Cannot load audio file: C:\\\\Users\\\\CgPC\\\\AppData\\\\Local\\\\Temp\\\\tmp_m1lkxtx.wav. Error: Failed to load audio: \"}"
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 0,
+        "avgRtf": 0,
+        "avgWer": 1,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 100
+      }
+    },
+    {
+      "engine": "whisperx",
+      "variant": "small",
+      "scenarioId": "scenario-002",
+      "scenarioName": "Đau dạ dày - Viêm loét dạ dày tá tràng - Nữ 42 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T10:20:16.922Z",
+          "metrics": {
+            "engine": "whisperx",
+            "variant": "small",
+            "transcribedText": "",
+            "latencyMs": 111,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "error": "Server returned 500: {\"detail\":\"Cannot load audio file: C:\\\\Users\\\\CgPC\\\\AppData\\\\Local\\\\Temp\\\\tmp6q115vxx.wav. Error: Failed to load audio: \"}"
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 0,
+        "avgRtf": 0,
+        "avgWer": 1,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 100
+      }
+    },
+    {
+      "engine": "whisperx",
+      "variant": "small",
+      "scenarioId": "scenario-003",
+      "scenarioName": "Tăng huyết áp + Đái tháo đường type 2 + Rối loạn lipid máu - Nam 58 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T10:20:17.051Z",
+          "metrics": {
+            "engine": "whisperx",
+            "variant": "small",
+            "transcribedText": "",
+            "latencyMs": 129,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "error": "Server returned 500: {\"detail\":\"Cannot load audio file: C:\\\\Users\\\\CgPC\\\\AppData\\\\Local\\\\Temp\\\\tmpa5umq54w.wav. Error: Failed to load audio: \"}"
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 0,
+        "avgRtf": 0,
+        "avgWer": 1,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 100
+      }
+    }
+  ]
+}

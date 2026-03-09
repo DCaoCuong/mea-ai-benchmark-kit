@@ -1,0 +1,44 @@
+{
+  "id": "llm-benchmark-1772438962754",
+  "type": "llm",
+  "createdAt": "2026-03-02T08:09:22.754Z",
+  "hardware": {
+    "cpu": "i7-11800H @ 2.30GHz",
+    "ram": "16GB",
+    "gpu": "RTX 3050 Ti",
+    "vram": "4GB"
+  },
+  "results": [
+    {
+      "taskName": "Role Detection",
+      "model": "gemma2:2b",
+      "scenarioId": "scenario-001",
+      "scenarioName": "Viêm họng cấp - Nam 35 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-02T08:09:22.752Z",
+          "metrics": {
+            "model": "gemma2:2b",
+            "content": "```json\n{\"roles\": [\n  \"Bác sĩ\", \n  \"Bệnh nhân\", \n  \"Bác sĩ\", \n  \"Bệnh nhân\", \n  \"Bác sĩ\", \n  \"Bác sĩ\", \n  \"Bệnh nhân\", \n  \"Bác sĩ\"\n]}\n``` \n\n\n**Giải thích:**\n\n* **Bác sĩ**:  Hỏi bệnh nhân về triệu chứng, chẩn đoán và kê đơn.\n* **Bệnh nhân**: Mô tả các triệu chứng của mình. \n",
+            "latencyMs": 8854,
+            "promptTokens": 419,
+            "completionTokens": 122,
+            "totalTokens": 541,
+            "jsonCompliant": true
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 8854,
+        "minLatencyMs": 8854,
+        "maxLatencyMs": 8854,
+        "avgPromptTokens": 419,
+        "avgCompletionTokens": 122,
+        "jsonComplianceRate": 100,
+        "errorRate": 0,
+        "accuracyScore": 56
+      }
+    }
+  ]
+}

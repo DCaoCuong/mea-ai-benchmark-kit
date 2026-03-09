@@ -1,0 +1,102 @@
+{
+  "id": "stt-benchmark-1772974051805",
+  "type": "stt",
+  "createdAt": "2026-03-08T12:47:31.805Z",
+  "hardware": {
+    "cpu": "i7-11800H @ 2.30GHz",
+    "ram": "16GB",
+    "gpu": "RTX 3050 Ti",
+    "vram": "4GB"
+  },
+  "results": [
+    {
+      "engine": "moonshine",
+      "variant": "moonshine-base",
+      "scenarioId": "scenario-001",
+      "scenarioName": "Viêm họng cấp - Nam 35 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T12:46:07.745Z",
+          "metrics": {
+            "engine": "moonshine",
+            "variant": "moonshine-base",
+            "transcribedText": "The one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the",
+            "latencyMs": 83300,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "wer": 1.0969,
+            "medicalTermAccuracy": 0
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 83300,
+        "avgRtf": 0.9255555555555556,
+        "avgWer": 1.0969,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 0
+      }
+    },
+    {
+      "engine": "moonshine",
+      "variant": "moonshine-base",
+      "scenarioId": "scenario-002",
+      "scenarioName": "Đau dạ dày - Viêm loét dạ dày tá tràng - Nữ 42 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T12:47:31.511Z",
+          "metrics": {
+            "engine": "moonshine",
+            "variant": "moonshine-base",
+            "transcribedText": "I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's a very good thing. I think it's",
+            "latencyMs": 83759,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "wer": 1,
+            "medicalTermAccuracy": 0
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 83759,
+        "avgRtf": 0.4653277777777778,
+        "avgWer": 1,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 0
+      }
+    },
+    {
+      "engine": "moonshine",
+      "variant": "moonshine-base",
+      "scenarioId": "scenario-003",
+      "scenarioName": "Tăng huyết áp + Đái tháo đường type 2 + Rối loạn lipid máu - Nam 58 tuổi",
+      "runs": [
+        {
+          "runIndex": 0,
+          "timestamp": "2026-03-08T12:47:31.803Z",
+          "metrics": {
+            "engine": "moonshine",
+            "variant": "moonshine-base",
+            "transcribedText": "",
+            "latencyMs": 289,
+            "audioDurationMs": 0,
+            "rtf": 0,
+            "diarizationAvailable": false,
+            "error": "Moonshine Server Error: 500"
+          }
+        }
+      ],
+      "summary": {
+        "avgLatencyMs": 0,
+        "avgRtf": 0,
+        "avgWer": 1,
+        "avgMedicalTermAccuracy": 0,
+        "errorRate": 100
+      }
+    }
+  ]
+}

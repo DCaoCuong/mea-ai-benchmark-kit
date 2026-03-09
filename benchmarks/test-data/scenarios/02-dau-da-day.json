@@ -1,0 +1,187 @@
+{
+    "id": "scenario-002",
+    "name": "Đau dạ dày - Viêm loét dạ dày tá tràng - Nữ 42 tuổi",
+    "difficulty": "medium",
+    "specialty": "GI",
+    "metadata": {
+        "patientAge": 42,
+        "patientGender": "Nữ",
+        "chiefComplaint": "Đau bụng vùng thượng vị 2 tuần, ợ nóng, buồn nôn",
+        "estimatedAudioLengthSeconds": 180,
+        "numberOfTurns": 12,
+        "medicalTermCount": 12
+    },
+    "transcript": "Bác sĩ: Chào chị, mời chị ngồi. Hôm nay chị đi khám vấn đề gì ạ?\nBệnh nhân: Dạ thưa bác sĩ, em bị đau bụng ở vùng trên rốn khoảng 2 tuần nay rồi. Đau âm ỉ, thỉnh thoảng đau nhiều.\nBác sĩ: Đau có liên quan đến bữa ăn không chị? Đau trước hay sau khi ăn?\nBệnh nhân: Dạ đau nhiều nhất lúc đói ạ. Ăn vào thì đỡ hơn một chút nhưng rồi lại đau. Em hay bị ợ nóng, ợ chua nữa.\nBác sĩ: Chị có buồn nôn hay nôn không? Đi cầu phân có đen không?\nBệnh nhân: Có buồn nôn nhưng không nôn bác sĩ. Phân thì bình thường, không đen.\nBác sĩ: Trước đây chị có bị bệnh dạ dày chưa? Có uống thuốc giảm đau thường xuyên không?\nBệnh nhân: Dạ em chưa bị bao giờ. Nhưng mấy tháng nay em hay uống ibuprofen vì đau khớp gối.\nBác sĩ: Chị có uống rượu bia, hút thuốc không? Gia đình có ai bị bệnh dạ dày không?\nBệnh nhân: Em không uống rượu, không hút thuốc. Ba em bị ung thư dạ dày mất rồi ạ.\nBác sĩ: Tôi khám bụng chị nhé. Ấn đau vùng thượng vị. Không có phản ứng thành bụng. Dựa trên triệu chứng, tôi nghi ngờ viêm loét dạ dày tá tràng, có thể liên quan đến việc dùng ibuprofen lâu ngày. Tôi sẽ chỉ định nội soi dạ dày tá tràng và test Helicobacter pylori. Tạm thời kê omeprazole 20mg uống 2 lần/ngày trước ăn 30 phút. Sucralfate 1g uống 4 lần/ngày. Ngưng ibuprofen, thay bằng paracetamol cho đau khớp.\nBệnh nhân: Dạ vâng. Vậy em kiêng ăn gì bác sĩ?\nBác sĩ: Chị tránh đồ cay, đồ chua, café, trà đặc, và không ăn quá khuya. Ăn chín uống sôi, chia nhỏ bữa ăn. Hẹn chị tuần sau quay lại nội soi nhé.",
+    "segments": [
+        {
+            "index": 0,
+            "text": "Chào chị, mời chị ngồi. Hôm nay chị đi khám vấn đề gì ạ?",
+            "role": "Bác sĩ",
+            "type": "greeting"
+        },
+        {
+            "index": 1,
+            "text": "Dạ thưa bác sĩ, em bị đau bụng ở vùng trên rốn khoảng 2 tuần nay rồi. Đau âm ỉ, thỉnh thoảng đau nhiều.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 2,
+            "text": "Đau có liên quan đến bữa ăn không chị? Đau trước hay sau khi ăn?",
+            "role": "Bác sĩ",
+            "type": "symptom_inquiry"
+        },
+        {
+            "index": 3,
+            "text": "Dạ đau nhiều nhất lúc đói ạ. Ăn vào thì đỡ hơn một chút nhưng rồi lại đau. Em hay bị ợ nóng, ợ chua nữa.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 4,
+            "text": "Chị có buồn nôn hay nôn không? Đi cầu phân có đen không?",
+            "role": "Bác sĩ",
+            "type": "symptom_inquiry"
+        },
+        {
+            "index": 5,
+            "text": "Có buồn nôn nhưng không nôn bác sĩ. Phân thì bình thường, không đen.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 6,
+            "text": "Trước đây chị có bị bệnh dạ dày chưa? Có uống thuốc giảm đau thường xuyên không?",
+            "role": "Bác sĩ",
+            "type": "symptom_inquiry"
+        },
+        {
+            "index": 7,
+            "text": "Dạ em chưa bị bao giờ. Nhưng mấy tháng nay em hay uống ibuprofen vì đau khớp gối.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 8,
+            "text": "Chị có uống rượu bia, hút thuốc không? Gia đình có ai bị bệnh dạ dày không?",
+            "role": "Bác sĩ",
+            "type": "symptom_inquiry"
+        },
+        {
+            "index": 9,
+            "text": "Em không uống rượu, không hút thuốc. Ba em bị ung thư dạ dày mất rồi ạ.",
+            "role": "Bệnh nhân",
+            "type": "symptom_report"
+        },
+        {
+            "index": 10,
+            "text": "Tôi khám bụng chị nhé. Ấn đau vùng thượng vị. Không có phản ứng thành bụng. Dựa trên triệu chứng, tôi nghi ngờ viêm loét dạ dày tá tràng, có thể liên quan đến việc dùng ibuprofen lâu ngày. Tôi sẽ chỉ định nội soi dạ dày tá tràng và test Helicobacter pylori. Tạm thời kê omeprazole 20mg uống 2 lần/ngày trước ăn 30 phút. Sucralfate 1g uống 4 lần/ngày. Ngưng ibuprofen, thay bằng paracetamol cho đau khớp.",
+            "role": "Bác sĩ",
+            "type": "examination"
+        },
+        {
+            "index": 11,
+            "text": "Dạ vâng. Vậy em kiêng ăn gì bác sĩ?",
+            "role": "Bệnh nhân",
+            "type": "acknowledgment"
+        },
+        {
+            "index": 12,
+            "text": "Chị tránh đồ cay, đồ chua, café, trà đặc, và không ăn quá khuya. Ăn chín uống sôi, chia nhỏ bữa ăn. Hẹn chị tuần sau quay lại nội soi nhé.",
+            "role": "Bác sĩ",
+            "type": "prescription"
+        }
+    ],
+    "groundTruth": {
+        "roleDetection": {
+            "roles": [
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ",
+                "Bệnh nhân",
+                "Bác sĩ"
+            ],
+            "description": "13 segments: BS-BN xen kẽ, nhiều câu hỏi chuyên sâu hơn"
+        },
+        "medicalFix": [
+            {
+                "input": "viên loét dạ dày tá tràng",
+                "expected": "viêm loét dạ dày tá tràng",
+                "errorType": "spelling"
+            },
+            {
+                "input": "kê omepazole 20mg",
+                "expected": "kê omeprazole 20mg",
+                "errorType": "drug_name"
+            },
+            {
+                "input": "test helicobacte pylori",
+                "expected": "test Helicobacter pylori",
+                "errorType": "terminology"
+            },
+            {
+                "input": "uống ibuprophen giảm đau",
+                "expected": "uống ibuprofen giảm đau",
+                "errorType": "drug_name"
+            },
+            {
+                "input": "đau bụng vùng thượng vi",
+                "expected": "đau bụng vùng thượng vị",
+                "errorType": "terminology"
+            },
+            {
+                "input": "nội soi dạ dày ta tràng",
+                "expected": "nội soi dạ dày tá tràng",
+                "errorType": "spelling"
+            },
+            {
+                "input": "sucralphate 1g uống 4 lần",
+                "expected": "sucralfate 1g uống 4 lần",
+                "errorType": "drug_name"
+            }
+        ],
+        "soap": {
+            "subjective": "Bệnh nhân nữ 42 tuổi, đau bụng vùng thượng vị 2 tuần, đau âm ỉ, đau nhiều lúc đói, đỡ khi ăn. Ợ nóng, ợ chua. Buồn nôn, không nôn. Phân bình thường, không phân đen. Tiền sử uống ibuprofen thường xuyên vì đau khớp gối. Không rượu bia, không thuốc lá. Gia đình: cha bị ung thư dạ dày.",
+            "objective": "Ấn đau vùng thượng vị. Không có phản ứng thành bụng.",
+            "assessment": "Viêm loét dạ dày tá tràng, nghi ngờ liên quan đến NSAID (ibuprofen). Cần loại trừ nhiễm H. pylori và ung thư dạ dày (tiền sử gia đình).",
+            "plan": "1. Nội soi dạ dày tá tràng. 2. Test Helicobacter pylori. 3. Omeprazole 20mg x 2 lần/ngày trước ăn 30 phút. 4. Sucralfate 1g x 4 lần/ngày. 5. Ngưng ibuprofen, thay paracetamol. 6. Chế độ ăn: tránh cay, chua, café, trà đặc, không ăn khuya, chia nhỏ bữa ăn. 7. Tái khám tuần sau để nội soi."
+        },
+        "icdCodes": [
+            "K29.7",
+            "K25.9"
+        ],
+        "icdCodesDetail": [
+            {
+                "code": "K29.7",
+                "description": "Viêm dạ dày, không đặc hiệu"
+            },
+            {
+                "code": "K25.9",
+                "description": "Loét dạ dày, không đặc hiệu, không xuất huyết, không thủng"
+            }
+        ],
+        "medicalAdvice": "Viêm loét dạ dày tá tràng liên quan NSAID cần ngưng thuốc NSAID ngay. Điều trị PPI (omeprazole) là lựa chọn đầu tay, thời gian 4-8 tuần. Cần nội soi dạ dày + sinh thiết để loại trừ bệnh lý ác tính, đặc biệt khi có tiền sử gia đình ung thư dạ dày. Test H. pylori bằng CLO test hoặc urease test hơi thở. Nếu H. pylori dương tính: phác đồ 3 thuốc (PPI + amoxicillin + clarithromycin) x 14 ngày. Theo dõi triệu chứng xuất huyết tiêu hóa: nôn ra máu, phân đen. Tái khám nội soi sau 4-6 tuần điều trị.",
+        "medicalTerms": [
+            "viêm loét",
+            "dạ dày tá tràng",
+            "thượng vị",
+            "omeprazole",
+            "sucralfate",
+            "ibuprofen",
+            "Helicobacter pylori",
+            "nội soi",
+            "NSAID",
+            "PPI",
+            "clarithromycin",
+            "amoxicillin"
+        ]
+    }
+}
